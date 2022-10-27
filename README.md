@@ -7,7 +7,7 @@ A machine learning framework for sport result prediction
 
 ### How Does Machine Learning Predict Sports Match Outcomes?
 
-One of the common machine learning (ML) tasks, which involves predicting a target variable in previously unseen data, is classification [28], [1]. The aim of classification is to predict a target variable (class) by building a classification model based on a training dataset, and then utilizing that model to predict the value of the class of test data [45]. This type of data processing is called supervised learning since the data processing phase is guided toward the class variable while building the model (see Fig. 1) [41]. Some common applications for classification include loan approval, medical diagnoses, email filtering, among others [2], [42].
+One of the common machine learning (ML) tasks, which involves predicting a target variable in previously unseen data, is classification. The aim of classification is to predict a target variable (class) by building a classification model based on a training dataset, and then utilizing that model to predict the value of the class of test data. This type of data processing is called supervised learning since the data processing phase is guided toward the class variable while building the model (see Fig. 1). Some common applications for classification include loan approval, medical diagnoses, email filtering, among others.
 
 ![Machine_Learning](./Images/machine_learning.png)
 
@@ -17,7 +17,7 @@ One of the common machine learning (ML) tasks, which involves predicting a targe
 
 ### Purpose
 
-Sport prediction is usually treated as a classification problem, with one class (win, lose, or draw) to be predicted [33]. Although some researchers e.g. [7], have also looked at the numeric prediction problem, where they predict the winning margin – a numeric value. In sport prediction, large numbers of features can be collected including the historical performance of the teams, results of matches, and data on players, to help different stakeholders understand the odds of winning or losing forthcoming matches. The decision of which team is likely to win is what we are aimimg to predict.
+Sport prediction is usually treated as a classification problem, with one class (win, lose, or draw) to be predicted. Although some researchers, have also looked at the numeric prediction problem, where they predict the winning margin – a numeric value. In sport prediction, large numbers of features can be collected including the historical performance of the teams, results of matches, and data on players, to help different stakeholders understand the odds of winning or losing forthcoming matches. The decision of which team is likely to win is what we are aimimg to predict.
 
 ### Questions to be answer:
 
