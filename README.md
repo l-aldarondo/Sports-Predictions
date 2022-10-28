@@ -42,11 +42,10 @@ To achive our goal we will use the following apporach:
 
 ### Datasets:
 
-* Rafael - create a composite dataset with multiple stats
+* season_stats.csv
 
-* Provide the source of the dataset
-
-* WNBA_Dataset.csv
+* Dataset was created merging different tables for with different stats into one dataset and saved as season_stats.csv
+* Data was scrapped from https://www.basketball-reference.com/wnba/years/1997.html#all_totals-team-opponent
 
 ### Software:
 
