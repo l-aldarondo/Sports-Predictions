@@ -1,6 +1,5 @@
 # Sports-Predictions
-
-
+A machine learning framework for sport result prediction
 
 ## Background
 
@@ -39,11 +38,14 @@ To achive our goal we will use the following apporach:
 
 ## Resources
 
-# Database
+### Database
 •	Data was scrapped from https://www.basketball-reference.com/ , saved as .csv. (between season 1997-98 to 2021-22)
 •	Total of twenty five tables, one for every season.
 
-### Glossary
+<br/>
+
+#### Glossary
+
 Rk -- Rank
 
 Age -- Player's age on February 1 of the season
@@ -73,7 +75,7 @@ Pace -- Pace Factor: As estimate of possessions per 40 minutes
 TS% -- True Shooting Percentage
 A measure of shooting efficiency that takes into account 2-point field goals, 3-point field goals, and free throws.
 
-* Offense Four Factors
+#### Offense Four Factors
 
 eFG% -- Effective Field Goal Percentage
 This statistic adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal.
@@ -84,7 +86,7 @@ ORB% -- Offensive Rebound Percentage An estimate of the percentage of available 
 
 FT/FGA -- Free Throws Per Field Goal Attempt
 
-* Defense Four Factors
+#### Defense Four Factors
 
 Opp_eFG% -- Opponent Effective Field Goal Percentage
 
@@ -92,9 +94,10 @@ Opp_TOV% -- Opponent Turnover Percentage
 
 Opp_DRB% -- Defensive Rebound Percentage An estimate of the percentage of available defensive rebounds a player grabbed while they were on the floor.
 
-Opp_FT/FGA -- Opponent Free Throws Per Field Goal Attempt
+* season_stats.csv
 
-<br/>
+* Dataset was created merging different tables for with different stats into one dataset and saved as season_stats.csv
+* Data was scrapped from https://www.basketball-reference.com/wnba/years/1997.html#all_totals-team-opponent
 
 ### Software:
 
@@ -138,7 +141,11 @@ Rafael
 
 Leonardo
 
-* We will use at least 3 models to compare against each other and determine wich model will provide a better prediction. 
+Segment 1, For all 3 models:
+
+- Mock models used **dummie data**, we'll be building the model on this to produce the final outcome.
+
+- Model were able to **connect to postgreSQL database**, extract the data and **provide an output**. 
 
 
 #### Logistic Regression
