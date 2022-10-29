@@ -1,8 +1,6 @@
 # Sports-Predictions
 A machine learning framework for sport result prediction
 
-<br/>
-
 ## Background
 
 ### How Does Machine Learning Predict Sports Match Outcomes?
@@ -44,9 +42,9 @@ To achive our goal we will use the following apporach:
 •	Data was scrapped from https://www.basketball-reference.com/ , saved as .csv. (between season 1997-98 to 2021-22)
 •	Total of twenty five tables, one for every season.
 
-#### Glossary
-
 <br/>
+
+#### Glossary
 
 Rk -- Rank
 
@@ -77,8 +75,6 @@ Pace -- Pace Factor: As estimate of possessions per 40 minutes
 TS% -- True Shooting Percentage
 A measure of shooting efficiency that takes into account 2-point field goals, 3-point field goals, and free throws.
 
-<br/>
-
 #### Offense Four Factors
 
 eFG% -- Effective Field Goal Percentage
@@ -89,8 +85,6 @@ TOV% -- Turnover Percentage An estimate of turnovers committed per 100 plays.
 ORB% -- Offensive Rebound Percentage An estimate of the percentage of available offensive rebounds a player grabbed while they were on the floor.
 
 FT/FGA -- Free Throws Per Field Goal Attempt
-
-<br/>
 
 #### Defense Four Factors
 
