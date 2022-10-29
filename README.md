@@ -42,7 +42,6 @@ To achive our goal we will use the following apporach:
 •	Data was scrapped from https://www.basketball-reference.com/ , saved as .csv. (between season 1997-98 to 2021-22)
 •	Total of twenty five tables, one for every season.
 
-<br/>
 
 #### Glossary
 
@@ -135,13 +134,13 @@ Rafael
 
 * We will use PostrgeSQL for our database
 
-**place holder for sql schema**
+![wnba_champs_ERD](./wnba_champs_ERD.png)
 
 ### Machine Learning:
 
 Leonardo
 
-Segment 1, For all 3 models:
+**Segment 1, For all 3 models:**
 
 - Mock models used **dummie data**, we'll be building the model on this to produce the final outcome.
 
