@@ -5,10 +5,10 @@
 •	Total of twenty five tables, one for every season.
 
 ### Glossary
-#### Rk -- Rank
-#### Age -- Player's age on February 1 of the season
-#### W -- Wins
-#### L -- Losses
+Rk -- Rank
+Age -- Player's age on February 1 of the season
+W -- Wins
+L -- Losses
 PW -- Pythagorean wins, i.e., expected wins based on points scored and allowed
 PL -- Pythagorean losses, i.e., expected losses based on points scored and allowed
 MOV -- Margin of Victory
