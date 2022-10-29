@@ -44,6 +44,7 @@ ORB% -- Offensive Rebound Percentage An estimate of the percentage of available 
 FT/FGA -- Free Throws Per Field Goal Attempt
 
 * Defense Four Factors
+* 
 Opp_eFG% -- Opponent Effective Field Goal Percentage
 
 Opp_TOV% -- Opponent Turnover Percentage
