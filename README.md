@@ -40,11 +40,13 @@ eFG% -- Effective Field Goal Percentage
 This statistic adjusts for the fact that a 3-point field goal is worth one more point than a 2-point field goal.
 
 TOV% -- Turnover Percentage An estimate of turnovers committed per 100 plays.
+
 ORB% -- Offensive Rebound Percentage An estimate of the percentage of available offensive rebounds a player grabbed while they were on the floor.
+
 FT/FGA -- Free Throws Per Field Goal Attempt
 
 * Defense Four Factors
-* 
+
 Opp_eFG% -- Opponent Effective Field Goal Percentage
 
 Opp_TOV% -- Opponent Turnover Percentage
