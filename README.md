@@ -1,6 +1,10 @@
 # Sports-Predictions
 A machine learning framework for sport result prediction
 
+![WNBA](./Images/wnba1.png)
+
+<sub>Credit: KARE
+
 ## Background
 
 ### How Does Machine Learning Predict Sports Match Outcomes?
