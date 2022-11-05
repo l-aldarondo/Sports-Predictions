@@ -208,3 +208,4 @@ Mark/Rafael/Leonardo
 
 [Applied Computing and Informatics (Journal)](https://www.sciencedirect.com/science/article/pii/S2210832717301485)
 
+[WNBA Image: Credit KARE](https://media.kare11.com/assets/KARE/images/da18568b-9a32-4b67-8560-3ea9bb330207/da18568b-9a32-4b67-8560-3ea9bb330207_750x422.png)
