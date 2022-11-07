@@ -136,18 +136,9 @@ Rafael
 
 **place holder for sql schema**
 
-### Machine Learning:
+## Machine Learning Model
 
-Leonardo
-
-Segment 1, For all 3 models:
-
-- Mock models used **dummie data**, we'll be building the model on this to produce the final outcome.
-
-- Model were able to **connect to postgreSQL database**, extract the data and **provide an output**. 
-
-
-#### Logistic Regression
+### Logistic Regression
 
 A type of regression model that predicts a probability. Logistic regression models have the following characteristics:
 
@@ -156,18 +147,48 @@ The label is categorical. The term logistic regression usually refers to binary 
 The loss function during training is Log Loss. (Multiple Log Loss units can be placed in parallel for labels with more than two possible values.)
 The model has a linear architecture, not a deep neural network. However, the remainder of this definition also applies to deep models that predict probabilities for categorical labels.
 
-#### Decision Tree
+### Decision Tree
 A supervised learning model composed of a set of conditions and leaves organized hierarchically.
 
 ![Desicion_tree](./Images/DecisionTree.png)
 
-#### Random Forest
+### Random Forest
 
 An ensemble of decision trees in which each decision tree is trained with a specific random noise, such as bagging.
 
 Random forests are a type of decision forest.
 
-We may explore other models as we start working on the project
+## Results Overview:
+
+## Logistic Regression
+
+* Features were explored using coefficients, Recursive Feature Elimination (RFE) and Select from Model (SFM) methods for the Logistic Regression model.
+* All three methods produced lower accuracy results then using all features
+* All features used in model
+* Model accuracy score: **0.9114**
+* Predicted winner test_1: LVA (Las Vegas Aces) - 63.1%
+* Predicted winner test_2: Minnesota Lynx 29.2%
+
+## Decision Tree
+* Features were ranked using model.feature_importances_
+* The bottom 8 features played no importance in the model outcome or accuracy
+* Top 13 features used in model
+* Model accuracy score: **0.9241**
+* Predicted winner test_1: The most probable winners were Connecticut Sun and **Las Vegas Aces**.
+* Predicted winner test_2: Minnesota Lynx
+
+## Random Forest
+* Features were ranked using model.feature_importances_
+* All features used to give model more data to train with
+* Model accuracy score: **0.9240**
+* Predicted winner test_1: Connecticut Sun - 77.0%
+* Predicted winner test_2: Minnesota Lynx 52.0%
+
+## How data was split into training and test sets
+* Data was split using sk.learn train_test_split dependencies with the default **75/25** split.
+
+## Explain model choice, including limitations and benefits
+* Supervised Machine Learning models were chosen due to the data having a label(‘Position’).
 
 <br/>
 
@@ -188,6 +209,16 @@ Mark/Rafael/Leonardo
 * webpage may be hosted at github pages or clouflare pages, but will explore other rich content options. 
 
 ## Summary:
+
+* The accuracy for the three models were very close but the model with the highest accuracy was Desicion Tree with **92.41%**
+* For our test_1, season 2022 was used as curren year data:
+    * The three models were able to accurate predict the most probable winner for season 2022 - **Las Vegas Aces**
+    
+* For our test_2, a random WNBA historical data was used to create season data to be use as current.
+    * The three models were able to accurate predict the most likely winner from a random dummie season - **Minnesota Lynx**
+
+Actual results: Since the WNBA season has ended we knew the actual winner. The LAV won the 2022 WNBA championship. The model did a good job predicting the most likely winners for the season (2022). The LAV arrived in 2nd place in the regular season standing but won the championship. This correrlates with our decision tree model that had LAV in 2nd place. This demostrate that not always the team with the best record and stats wins the championship. There are other factors that can influence the outcome of a season, like team cohesion, experience, coaching, ect.
+
 
 
 ## References:
