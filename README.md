@@ -13,6 +13,8 @@ One of the common machine learning (ML) tasks, which involves predicting a targe
 
 ![Machine_Learning](./Images/machine_learning.png)
 
+<sub>Fig. 1.1 Supervised learning versus unsupervised learning. Credit Applied Computing and Informatics
+
 <br/>
 
 ## Project Overview
@@ -37,6 +39,8 @@ Sport prediction is usually treated as a classification problem, with one class 
 To achive our goal we will use the following apporach:
 
 ![Metodology](./Images/project_CRISP_DM_Steps.png)
+
+<sub>Fig. 1.2 The six phases of our ML model project. Credit Applied Computing and Informatics
 
 <br/>
 
@@ -140,18 +144,9 @@ Rafael
 
 ![wnba_champs_ERD](./wnba_champs_ERD.png)
 
-### Machine Learning:
+## Machine Learning Model
 
-Leonardo
-
-**Segment 1, For all 3 models:**
-
-- Mock models used **dummie data**, we'll be building the model on this to produce the final outcome.
-
-- Model were able to **connect to postgreSQL database**, extract the data and **provide an output**. 
-
-
-#### Logistic Regression
+### Logistic Regression
 
 A type of regression model that predicts a probability. Logistic regression models have the following characteristics:
 
@@ -160,22 +155,54 @@ The label is categorical. The term logistic regression usually refers to binary 
 The loss function during training is Log Loss. (Multiple Log Loss units can be placed in parallel for labels with more than two possible values.)
 The model has a linear architecture, not a deep neural network. However, the remainder of this definition also applies to deep models that predict probabilities for categorical labels.
 
-#### Decision Tree
+### Decision Tree
 A supervised learning model composed of a set of conditions and leaves organized hierarchically.
 
 ![Desicion_tree](./Images/DecisionTree.png)
 
-#### Random Forest
+<sub> Fig. 1.3 Decision Tree schema. Credit Google machine Learning Dictionary
+
+### Random Forest
 
 An ensemble of decision trees in which each decision tree is trained with a specific random noise, such as bagging.
 
 Random forests are a type of decision forest.
 
-We may explore other models as we start working on the project
+## Results Overview:
+
+### How data was split into training and test sets:
+* Data was split using sk.learn train_test_split dependencies with the default **75/25** split.
+
+### Explain model choice:
+* Supervised Machine Learning models were chosen due to the data having a label(‘Position’).
+
+### Logistic Regression
+
+* Features were explored using coefficients, Recursive Feature Elimination (RFE) and Select from Model (SFM) methods for the Logistic Regression model.
+* All three methods produced lower accuracy results then using all features
+* All features used in model
+* Model accuracy score: **0.9114**
+* Predicted winner test_1: **LVA (Las Vegas Aces) - 63.1%**
+* Predicted winner test_2: **Minnesota Lynx 29.2%**
+
+### Decision Tree
+* Features were ranked using model.feature_importances_
+* The bottom 8 features played no importance in the model outcome or accuracy
+* Top 13 features used in model
+* Model accuracy score: **0.9241**
+* Predicted winner test_1: The most probable winners were Connecticut Sun and **Las Vegas Aces**.
+* Predicted winner test_2: **Minnesota Lynx**
+
+### Random Forest
+* Features were ranked using model.feature_importances_
+* All features used to give model more data to train with
+* Model accuracy score: **0.9240**
+* Predicted winner test_1: **Connecticut Sun - 77.0%**
+* Predicted winner test_2: **Minnesota Lynx 52.0%**
 
 <br/>
 
-### Visualization:
+## Visualization:
 
 Mark
 
@@ -183,7 +210,7 @@ Mark
 
 * Also will use Matplotlib and Seaborn for our notebook, PP and README visualizations.
 
-### Deployment:
+## Deployment:
 
 Mark/Rafael/Leonardo
 
@@ -193,6 +220,30 @@ Mark/Rafael/Leonardo
 
 ## Summary:
 
+* The accuracy for the three models were very close but the model with the highest accuracy was Desicion Tree with **92.41%**
+* For our test_1, season 2022 was used as curren year data:
+    * The three models were able to accurate predict the most probable winner for season 2022 - **Las Vegas Aces**
+    * The three models were able to accurate predict the most probable 2nd place or subchampion for season 2022 - **Conneticut Sun**
+
+* For our test_2, a random WNBA historical data was used to create season data to be use as current.
+    * The three models were able to accurate predict the most likely winner from a random dummie season - **Minnesota Lynx**
+
+Actual results: 
+For our test_1 we used the last season of WNBA data as current year. The models did a good job predicting the most probable winners for the season (2022). During the regular season, the Conneticut Suns arrived in 1st place and the Las Vegas Aces arrived in 2nd place, however the Las vegas Aces won the championship. This correrlates with all our models that had COS in 1st place and LAV in 2nd place. The data analysis demostrate that not always the team with the best record and stats wins the championship. There are other factors that can influence the outcome of a season, like team cohesion, experience, coaching, ect.
+
+For our test_2 we created a dummy dataset using actual WNBA historical data and used as "current year". The intention was to evaluate if the model was able to acurate predict a winer with an unknown dataset. All 3 models were able to predict the most probable winner, the Minnesota Lynx. The 3 models did a great job predicting a most probable winner based in team stats as the Minnesota Lynx were the team with the best statst and greater margin over victory amoung all the teams in the dataset. Actual results: the Minnesota Lynx was the WNBA champion for season 2017.
+
+## Challenges:
+
+* We had some challenges during the feature exploration, understanding which method to use to find feature importance for each model was an important factor for the ML model since that could affect the overall model performance.
+ 
+* Selecting what features to drop to improve our model accuracy was also challenging. Dropping features was based on feature_importance method, used to find the influence of each feature on our model accuracy. However we find out that dropping too many features would cause toe accuracy to drop.
+
+*
+
+*
+
+*
 
 ## References:
 
