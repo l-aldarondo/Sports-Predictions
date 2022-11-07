@@ -9,6 +9,8 @@ One of the common machine learning (ML) tasks, which involves predicting a targe
 
 ![Machine_Learning](./Images/machine_learning.png)
 
+<sub>Fig. 1.1 Supervised learning versus unsupervised learning. Credit Applied Computing and Informatics
+
 <br/>
 
 ## Project Overview
@@ -33,6 +35,8 @@ Sport prediction is usually treated as a classification problem, with one class 
 To achive our goal we will use the following apporach:
 
 ![Metodology](./Images/project_CRISP_DM_Steps.png)
+
+<sub>Fig. 1.2 The six phases of our ML model project. Credit Applied Computing and Informatics
 
 <br/>
 
@@ -152,6 +156,8 @@ A supervised learning model composed of a set of conditions and leaves organized
 
 ![Desicion_tree](./Images/DecisionTree.png)
 
+<sub> Fig. 1.3 Decision Tree schema. Credit Google machine Learning Dictionary
+
 ### Random Forest
 
 An ensemble of decision trees in which each decision tree is trained with a specific random noise, such as bagging.
@@ -213,13 +219,27 @@ Mark/Rafael/Leonardo
 * The accuracy for the three models were very close but the model with the highest accuracy was Desicion Tree with **92.41%**
 * For our test_1, season 2022 was used as curren year data:
     * The three models were able to accurate predict the most probable winner for season 2022 - **Las Vegas Aces**
+    * The three models were able to accurate predict the most probable 2nd place or subchampion for season 2022 - **Conneticut Sun**
 
 * For our test_2, a random WNBA historical data was used to create season data to be use as current.
     * The three models were able to accurate predict the most likely winner from a random dummie season - **Minnesota Lynx**
 
-Actual results: Since the WNBA season has ended we knew the actual winner. The LAV won the 2022 WNBA championship. The model did a good job predicting the most likely winners for the season (2022). The LAV arrived in 2nd place in the regular season standing but won the championship. This correrlates with our decision tree model that had LAV in 2nd place. This demostrate that not always the team with the best record and stats wins the championship. There are other factors that can influence the outcome of a season, like team cohesion, experience, coaching, ect.
+Actual results: 
+For our test_1 we used the last season of WNBA data as current year. The models did a good job predicting the most probable winners for the season (2022). During the regular season, the Conneticut Suns arrived in 1st place and the Las Vegas Aces arrived in 2nd place, however the Las vegas Aces won the championship. This correrlates with all our models that had COS in 1st place and LAV in 2nd place. The data analysis demostrate that not always the team with the best record and stats wins the championship. There are other factors that can influence the outcome of a season, like team cohesion, experience, coaching, ect.
 
+For our test_2 we created a dummy dataset using actual WNBA historical data and used as "current year". The intention was to evaluate if the model was able to acurate predict a winer with an unknown dataset. All 3 models were able to predict the most probable winner, the Minnesota Lynx. The 3 models did a great job predicting a most probable winner based in team stats as the Minnesota Lynx were the team with the best statst and greater margin over victory amoung all the teams in the dataset. Actual results: the Minnesota Lynx was the WNBA champion for season 2017.
 
+## Challenges:
+
+* We had some challenges during the feature exploration, understanding which method to use to find feature importance for each model was an important factor for the ML model since that could affect the overall model performance.
+ 
+* Selecting what features to drop to improve our model accuracy was also challenging. Dropping features was based on feature_importance method, used to find the influence of each feature on our model accuracy. However we find out that dropping too many features would cause toe accuracy to drop.
+
+*
+
+*
+
+*
 
 ## References:
 
