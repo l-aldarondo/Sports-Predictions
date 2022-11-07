@@ -181,24 +181,40 @@ Random forests are a type of decision forest.
 * Features were explored using coefficients, Recursive Feature Elimination (RFE) and Select from Model (SFM) methods for the Logistic Regression model.
 * All three methods produced lower accuracy results then using all features
 * All features used in model
-* Model accuracy score: **0.9114**
+* Model accuracy score: **0.9114** (Fig. 1.4)
 * Predicted winner test_1: **LVA (Las Vegas Aces) - 63.1%**
 * Predicted winner test_2: **Minnesota Lynx 29.2%**
+
+![Logistic_regression_Accuracy](./Images/Logistic_Regression_accuracy.png)
+
+<sub >Fig. 1.4 Logistic_regression_Accuracy
+
+<br/>
 
 ### Decision Tree
 * Features were ranked using model.feature_importances_
 * The bottom 8 features played no importance in the model outcome or accuracy
 * Top 13 features used in model
-* Model accuracy score: **0.9241**
+* Model accuracy score: **0.9241** (Fig. 1.5)
 * Predicted winner test_1: The most probable winners were Connecticut Sun and **Las Vegas Aces**.
 * Predicted winner test_2: **Minnesota Lynx**
+
+![Decision_Tree_Accuracy](./Images/DT_accuracy_test.png)
+
+<sub >Fig. 1.5 Decision_Tree_Accuracy
+
+<br/>
 
 ### Random Forest
 * Features were ranked using model.feature_importances_
 * All features used to give model more data to train with
-* Model accuracy score: **0.9240**
+* Model accuracy score: **0.9240** (Fig. 1.6)
 * Predicted winner test_1: **Connecticut Sun - 77.0%**
 * Predicted winner test_2: **Minnesota Lynx 52.0%**
+
+![Random_Forest_Accuracy](./Images/Random_Forest_accuracy.png)
+
+<sub >Fig. 1.6 Random_Forest_Accuracy
 
 <br/>
 
