@@ -160,6 +160,12 @@ Random forests are a type of decision forest.
 
 ## Results Overview:
 
+### How data was split into training and test sets:
+* Data was split using sk.learn train_test_split dependencies with the default **75/25** split.
+
+### Explain model choice:
+* Supervised Machine Learning models were chosen due to the data having a label(‘Position’).
+
 ## Logistic Regression
 
 * Features were explored using coefficients, Recursive Feature Elimination (RFE) and Select from Model (SFM) methods for the Logistic Regression model.
@@ -184,15 +190,9 @@ Random forests are a type of decision forest.
 * Predicted winner test_1: Connecticut Sun - 77.0%
 * Predicted winner test_2: Minnesota Lynx 52.0%
 
-## How data was split into training and test sets
-* Data was split using sk.learn train_test_split dependencies with the default **75/25** split.
-
-## Explain model choice, including limitations and benefits
-* Supervised Machine Learning models were chosen due to the data having a label(‘Position’).
-
 <br/>
 
-### Visualization:
+## Visualization:
 
 Mark
 
@@ -200,7 +200,7 @@ Mark
 
 * Also will use Matplotlib and Seaborn for our notebook, PP and README visualizations.
 
-### Deployment:
+## Deployment:
 
 Mark/Rafael/Leonardo
 
@@ -213,7 +213,7 @@ Mark/Rafael/Leonardo
 * The accuracy for the three models were very close but the model with the highest accuracy was Desicion Tree with **92.41%**
 * For our test_1, season 2022 was used as curren year data:
     * The three models were able to accurate predict the most probable winner for season 2022 - **Las Vegas Aces**
-    
+
 * For our test_2, a random WNBA historical data was used to create season data to be use as current.
     * The three models were able to accurate predict the most likely winner from a random dummie season - **Minnesota Lynx**
 
