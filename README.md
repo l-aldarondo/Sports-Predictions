@@ -166,29 +166,29 @@ Random forests are a type of decision forest.
 ### Explain model choice:
 * Supervised Machine Learning models were chosen due to the data having a label(‘Position’).
 
-## Logistic Regression
+### Logistic Regression
 
 * Features were explored using coefficients, Recursive Feature Elimination (RFE) and Select from Model (SFM) methods for the Logistic Regression model.
 * All three methods produced lower accuracy results then using all features
 * All features used in model
 * Model accuracy score: **0.9114**
-* Predicted winner test_1: LVA (Las Vegas Aces) - 63.1%
-* Predicted winner test_2: Minnesota Lynx 29.2%
+* Predicted winner test_1: **LVA (Las Vegas Aces) - 63.1%**
+* Predicted winner test_2: **Minnesota Lynx 29.2%**
 
-## Decision Tree
+### Decision Tree
 * Features were ranked using model.feature_importances_
 * The bottom 8 features played no importance in the model outcome or accuracy
 * Top 13 features used in model
 * Model accuracy score: **0.9241**
 * Predicted winner test_1: The most probable winners were Connecticut Sun and **Las Vegas Aces**.
-* Predicted winner test_2: Minnesota Lynx
+* Predicted winner test_2: **Minnesota Lynx**
 
-## Random Forest
+### Random Forest
 * Features were ranked using model.feature_importances_
 * All features used to give model more data to train with
 * Model accuracy score: **0.9240**
-* Predicted winner test_1: Connecticut Sun - 77.0%
-* Predicted winner test_2: Minnesota Lynx 52.0%
+* Predicted winner test_1: **Connecticut Sun - 77.0%**
+* Predicted winner test_2: **Minnesota Lynx 52.0%**
 
 <br/>
 
