@@ -188,45 +188,44 @@ While individual trees might be “weak learners,” the principle of Random For
 
 ### Logistic Regression
 
-* Features were explored using coefficients, Recursive Feature Elimination (RFE) and Select from Model (SFM) methods for the Logistic Regression model.
+* Features were explored using coefficients, Recursive Feature Elimination (RFE) and Select from Model (SFM) methods for the Logistic Regression model. (Fig 1.4)
 * All three methods produced lower accuracy results then using all features
 * All features used in model
-* Model accuracy score: **0.9114** (Fig. 1.4)
-* Predicted winner test_1: **LVA (Las Vegas Aces) - 63.1%**
+* Model accuracy score: **0.9114**
+* Predicted winner test_1: **Las Vegas Aces (LVA) - 63.1%**
 * Predicted winner test_2: **Minnesota Lynx 29.2%**
 
-![Logistic_regression_Accuracy](./Images/Logistic_Regression_accuracy.png)
+![Logistic_Regression_feature_importance](./Images/LR_feature_importance.png)
 
-<sub >Fig. 1.4 Logistic_regression_Accuracy
+<sub> Fig. 1.4 Logistic Regression feature importance.
 
 <br/>
 
 ### Decision Tree
-* Features were ranked using model.feature_importances_
+* Features were ranked using model.feature_importances_ (Fig. 1.6)
 * The bottom 8 features played no importance in the model outcome or accuracy
 * Top 13 features used in model
 * Model accuracy score: **0.9241** (Fig. 1.5)
 * Predicted winner test_1: The most probable winners were Connecticut Sun and **Las Vegas Aces**.
 * Predicted winner test_2: **Minnesota Lynx**
 
-![Decision_Tree_Accuracy](./Images/DT_accuracy_test.png)
+![Decision_Tree_feature_importance](./Images/DT_feature_importance.png)
 
-<sub >Fig. 1.5 Decision_Tree_Accuracy
+<sub> Fig. 1.6 Decision Tree feature importance.
 
 <br/>
 
 ### Random Forest
-* Features were ranked using model.feature_importances_
+* Features were ranked using model.feature_importances_ (Fig. 1.9)
 * All features used to give model more data to train with
 * Model accuracy score: **0.9240** (Fig. 1.6)
 * Predicted winner test_1: **Connecticut Sun - 77.0%**
 * Predicted winner test_2: **Minnesota Lynx 52.0%**
 
-![Random_Forest_Accuracy](./Images/Random_Forest_accuracy.png)
+![Random_forest_feature_importance](./Images/RF_feature_importance.png)
 
-<sub >Fig. 1.6 Random_Forest_Accuracy
+<sub> Fig. 1.8 Random Forest feature importance.
 
-<br/>
 
 ## Visualization:
 
