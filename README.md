@@ -25,9 +25,9 @@ Sport prediction is usually treated as a classification problem, with one class 
 
 ### Questions to be answer:
 
-1. Which team is likely to win a championship or arrive in 1st place?
+1. Which team is most likely to win a championship or arrive in 1st place?
 
-2. Which team is likely to win subchampionship or arrive in 2nd place?
+2. Which team is most likely to arrive in 2nd place?
 
 3. What model had a higher accuracy?
 
@@ -36,7 +36,7 @@ Sport prediction is usually treated as a classification problem, with one class 
 
 ### Metodology:
 
-To achive our goal we will use the following apporach:
+To achive our goal we will use CRISP-DM framework apporach:
 
 ![Metodology](./Images/project_CRISP_DM_Steps.png)
 
@@ -138,13 +138,18 @@ Mark
 
 ### Database:
 
-Rafael
-
-* We will use PostrgeSQL for our database
+* We used PostrgeSQL for our database: wnba_champs
 
 ![wnba_champs_ERD](./wnba_champs_ERD.png)
 
+<sub>Fig. 1.3 wnba_champs_ERD
+
+<br/>
+
 ## Machine Learning Model
+
+### Explain model choice:
+* Supervised Machine Learning models were chosen due to the data having a label(‘Position’).
 
 ### Logistic Regression
 
@@ -157,14 +162,14 @@ The model has a linear architecture, not a deep neural network. However, the rem
 
 ![Logistic_Regression](./Images/Logistic_Regression_sample.png)
 
-<sub> Fig. 1.3 Logistic Regression plot. Credit srikarkatta.wordpress
+<sub> Fig. 1.4 Logistic Regression plot. Credit srikarkatta.wordpress
 
 ### Decision Tree
 Decision Trees are a type of Supervised Machine Learning where the data is continuously split according to a certain parameter. The tree can be explained by two entities, namely decision nodes and leaves organized hierarchically. The leaves are the decisions or the final outcomes. And the decision nodes are where the data is split.
 
 ![Desicion_tree](./Images/Decision_tree_schema.png)
 
-<sub> Fig. 1.3 Decision Tree schema. Credit Google machine Learning Dictionary
+<sub> Fig. 1.5 Decision Tree schema. Credit Google machine Learning Dictionary
 
 ### Random Forest
 
@@ -174,58 +179,76 @@ While individual trees might be “weak learners,” the principle of Random For
 
 ![Random_Forest](./Images/Random_Forest_schema.png)
 
-<sub> Fig. 1.3 Random Forest schema. Credit insightsoftware
+<sub> Fig. 1.6 Random Forest schema. Credit insightsoftware
+
+<br/>
+
+### How data was split into training and test sets:
+* Data was split using sk.learn train_test_split dependencies with the default **75/25** split.
 
 <br/>
 
 ## Results Overview:
 
-### How data was split into training and test sets:
-* Data was split using sk.learn train_test_split dependencies with the default **75/25** split.
-
-### Explain model choice:
-* Supervised Machine Learning models were chosen due to the data having a label(‘Position’).
-
 ### Logistic Regression
 
-* Features were explored using coefficients, Recursive Feature Elimination (RFE) and Select from Model (SFM) methods for the Logistic Regression model. (Fig 1.4)
+* Features were explored using coefficients, Recursive Feature Elimination (RFE) and Select from Model (SFM) methods for the Logistic Regression model. (Fig 1.7)
 * All three methods produced lower accuracy results then using all features
 * All features used in model
-* Model accuracy score: **0.9114**
+* Model accuracy score: **0.9114** (Fig. 1.8)
 * Predicted winner test_1: **Las Vegas Aces (LVA) - 63.1%**
 * Predicted winner test_2: **Minnesota Lynx 29.2%**
 
 ![Logistic_Regression_feature_importance](./Images/LR_feature_importance.png)
 
-<sub> Fig. 1.4 Logistic Regression feature importance.
+<sub> Fig. 1.7 Logistic Regression feature importance.
+
+<br/>
+
+![Logistic_Regression_accuracy_score](./Images/Logistic_Regression_accuracy.png)
+
+<sub> Fig. 1.8 Logistic Regression accuracy score.
 
 <br/>
 
 ### Decision Tree
-* Features were ranked using model.feature_importances_ (Fig. 1.6)
+* Features were ranked using model.feature_importances_ (Fig. 1.9)
 * The bottom 8 features played no importance in the model outcome or accuracy
 * Top 13 features used in model
-* Model accuracy score: **0.9241** (Fig. 1.5)
-* Predicted winner test_1: The most probable winners were Connecticut Sun and **Las Vegas Aces**.
+* Model accuracy score: **0.9241** (Fig. 1.10)
+* Predicted winner test_1: The most probable winners were **Connecticut Sun and Las Vegas Aces**.
 * Predicted winner test_2: **Minnesota Lynx**
 
 ![Decision_Tree_feature_importance](./Images/DT_feature_importance.png)
 
-<sub> Fig. 1.6 Decision Tree feature importance.
+<sub> Fig. 1.9 Decision Tree feature importance.
+
+<br/>
+
+![Decision_Tree_accuracy score](./Images/DT_accuracy_test.png)
+
+<sub> Fig. 1.10 Decision Tree accuracy score.
 
 <br/>
 
 ### Random Forest
-* Features were ranked using model.feature_importances_ (Fig. 1.9)
+* Features were ranked using model.feature_importances_ (Fig. 1.11)
 * All features used to give model more data to train with
-* Model accuracy score: **0.9240** (Fig. 1.6)
+* Model accuracy score: **0.9240** (Fig. 1.12)
 * Predicted winner test_1: **Connecticut Sun - 77.0%**
 * Predicted winner test_2: **Minnesota Lynx 52.0%**
 
 ![Random_forest_feature_importance](./Images/RF_feature_importance.png)
 
-<sub> Fig. 1.8 Random Forest feature importance.
+<sub> Fig. 1.11 Random Forest feature importance.
 
+<br/>
+
+![Random forest accuracy score](./Images/Random_Forest_accuracy.png)
+
+<sub> Fig. 1.12 Random forest accuracy score.
+
+<br/>
 
 ## Visualization:
 
@@ -264,11 +287,13 @@ For our test_2 we created a dummy dataset using actual WNBA historical data and 
  
 * Selecting what features to drop to improve our model accuracy was also challenging. Dropping features was based on feature_importance method, used to find the influence of each feature on our model accuracy. However we find out that dropping too many features would cause toe accuracy to drop.
 
-*
+* Rafael/Mark
 
-*
+* Rafael/Mark
 
-*
+* Rafael/Mark
+
+<br/>
 
 ## References:
 
