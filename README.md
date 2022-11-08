@@ -155,18 +155,28 @@ The label is categorical. The term logistic regression usually refers to binary 
 The loss function during training is Log Loss. (Multiple Log Loss units can be placed in parallel for labels with more than two possible values.)
 The model has a linear architecture, not a deep neural network. However, the remainder of this definition also applies to deep models that predict probabilities for categorical labels.
 
-### Decision Tree
-A supervised learning model composed of a set of conditions and leaves organized hierarchically.
+![Logistic_Regression](./Images/Logistic_Regression_sample.png)
 
-![Desicion_tree](./Images/DecisionTree.png)
+<sub> Fig. 1.3 Logistic Regression plot. Credit srikarkatta.wordpress
+
+### Decision Tree
+Decision Trees are a type of Supervised Machine Learning where the data is continuously split according to a certain parameter. The tree can be explained by two entities, namely decision nodes and leaves organized hierarchically. The leaves are the decisions or the final outcomes. And the decision nodes are where the data is split.
+
+![Desicion_tree](./Images/Decision_tree_schema.png)
 
 <sub> Fig. 1.3 Decision Tree schema. Credit Google machine Learning Dictionary
 
 ### Random Forest
 
-An ensemble of decision trees in which each decision tree is trained with a specific random noise, such as bagging.
+Random Forest is perhaps the most popular classification algorithm, capable of both classification and regression and can accurately classify large volumes of data. The name “Random Forest” is derived from the fact that it is an ensemble of decision trees in which each decision tree is trained with a specific random noise, such as bagging.
 
-Random forests are a type of decision forest.
+While individual trees might be “weak learners,” the principle of Random Forest is that together they can comprise a single “strong learner.”
+
+![Random_Forest](./Images/Random_Forest_schema.png)
+
+<sub> Fig. 1.3 Random Forest schema. Credit insightsoftware
+
+<br/>
 
 ## Results Overview:
 
