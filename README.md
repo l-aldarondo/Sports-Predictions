@@ -5,9 +5,13 @@
 •	Total of twenty five tables, one for every season.
 
 ### Project Segment 2 
+
 • Datasets loaded into PostgreSQL database using python. (database_initial_load.ipynb)
-• Updated datasets saved as csv, cleaned and loaded into database. (database_load_nov15.ipynb, database_load_nov27.ipynb)
+
+• Updated datasets saved as csv, cleaned and loaded into database. (database_load.ipynb)
+
 • Column name changed inside database
+
 • All 2 datasets consist of the same columns/features. This columns/features consisted of Win pct, Margin of victory, Pace, Offensive rating, Defensive rating plus five columns with team advance stats and another five with opponents advance stats
 
 ### Glossary
