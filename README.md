@@ -8,7 +8,7 @@
 
 • Datasets loaded into PostgreSQL database using python. (database_initial_load.ipynb)
 
-• Updated datasets saved as csv, cleaned and loaded into database. (database_load.ipynb)
+• Updated datasets saved as csv(Folder "other/stats.cvs and cy_stats1), cleaned and loaded into database. (database_load.ipynb)
 
 • Column name changed inside database
 
