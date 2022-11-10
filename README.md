@@ -3,7 +3,7 @@ A machine learning framework for sport result prediction
 
 ![WNBA](./Images/wnba1.png)
 
-<sub>[Image source]((https://media.kare11.com/assets/KARE/images/da18568b-9a32-4b67-8560-3ea9bb330207/da18568b-9a32-4b67-8560-3ea9bb330207_750x422.png))
+<sub>[Image source](https://media.kare11.com/assets/KARE/images/da18568b-9a32-4b67-8560-3ea9bb330207/da18568b-9a32-4b67-8560-3ea9bb330207_750x422.png)
 
 ## Background
 
