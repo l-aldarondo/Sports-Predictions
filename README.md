@@ -117,6 +117,8 @@ Opp_DRB% -- Defensive Rebound Percentage An estimate of the percentage of availa
 
 * seaborn
 
+* QuickDBD
+
 * PostgreSQL
 
 * Tableau
@@ -290,9 +292,9 @@ While individual trees might be “weak learners,” the principle of Random For
 * Features were explored using coefficients, Recursive Feature Elimination (RFE) and Select from Model (SFM) methods for the Logistic Regression model. (Fig 1.7)
 * All three methods produced lower accuracy results then using all features
 * All features used in model
-* Model accuracy score: **0.9114** (Fig. 1.8)
-* Predicted winner test_1: **Las Vegas Aces (LVA) - 63.1%**
-* Predicted winner test_2: **Minnesota Lynx 29.2%**
+* Model accuracy score: **0.9241** (Fig. 1.8)
+* Predicted winner test_1: **Las Vegas Aces (LVA) - 60.9%**
+* Predicted winner test_2: **Minnesota Lynx 29.5%**
 
 ![Logistic_Regression_feature_importance](./Images/LR_feature_importance.png)
 
@@ -365,7 +367,7 @@ Mark/Rafael/Leonardo
 
 ## Summary:
 
-* The accuracy for the three models were very close but the model with the highest accuracy was Desicion Tree with **92.41%**
+* The accuracy for the three models were very close, with the highest accuracy achived by Logistic Regression, and  Desicion Tree with **92.41%**
 * For our test_1, season 2022 was used as curren year data:
     * The three models were able to accurate predict the most probable winner for season 2022 - **Las Vegas Aces**
     * The three models were able to accurate predict the most probable 2nd place or subchampion for season 2022 - **Conneticut Sun**
