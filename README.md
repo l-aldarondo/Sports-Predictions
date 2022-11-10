@@ -3,7 +3,7 @@ A machine learning framework for sport result prediction
 
 ![WNBA](./Images/wnba1.png)
 
-<sub>Credit: KARE
+<sub>[Image source]((https://media.kare11.com/assets/KARE/images/da18568b-9a32-4b67-8560-3ea9bb330207/da18568b-9a32-4b67-8560-3ea9bb330207_750x422.png))
 
 ## Background
 
@@ -46,10 +46,9 @@ To achive our goal we will use CRISP-DM framework apporach:
 
 ## Resources
 
-### Database
+### Database source
 •	Data was scrapped from https://www.basketball-reference.com/ , saved as .csv. (between season 1997-98 to 2021-22)
 •	Total of twenty five tables, one for every season.
-
 
 #### Glossary
 
@@ -101,12 +100,8 @@ Opp_TOV% -- Opponent Turnover Percentage
 
 Opp_DRB% -- Defensive Rebound Percentage An estimate of the percentage of available defensive rebounds a player grabbed while they were on the floor.
 
-* season_stats.csv
 
-* Dataset was created merging different tables for with different stats into one dataset and saved as season_stats.csv
-* Data was scrapped from https://www.basketball-reference.com/wnba/years/1997.html#all_totals-team-opponent
-
-### Software:
+### Software and tools:
 
 * Jupyter Notebook
 
@@ -130,15 +125,31 @@ Opp_DRB% -- Defensive Rebound Percentage An estimate of the percentage of availa
 
 ## Project Outline
 
-### Power Point / G Slides Presentation:
+### Presentation:
 
-Mark
+**Mark** need to update
 
-* We will create a PP or Google Slides  for our live presentation.
+* We will create a Google Slides  for our live presentation.
 
 ### Database:
 
 * We used PostrgeSQL for our database: wnba_champs
+
+* Data was scrapped from Data was scrapped from https://www.basketball-reference.com/, saved as .csv(wnba_stats.csv, cy_stats.csv, cy_stats2.csv)
+
+* Total of three tables, one for past years data(wnba_stats.csv), one individual table for current year stats, and one individual table for dummie_current_year using wnba historical data. Tables were saved as follow, (cy_stats.csv, cy_stats2.csv).
+
+* Datasets loaded into PostgreSQL database using python. (database_initial_load.ipynb)
+
+* Column name changed inside database
+
+* All 3 datasets consist of the same columns/features. This columns/features consisted of Win pct, Margin of victory, Pace, Offensive rating, Defensive rating plus five columns with team advance stats and another five with opponents advance stats
+
+* A separate config.py file will be needed with the db_password variable the password for the database
+
+* Database wnba_champs_ERD was created using (QuickDBD) as shown in image 1.3
+
+<br/>
 
 ![wnba_champs_ERD](./wnba_champs_ERD.png)
 
@@ -148,8 +159,40 @@ Mark
 
 ## Machine Learning Model
 
+### Preliminary data preprocessing
+
+* Missing or null values were checked pre-database creation-none found.
+
+* Import from PostgreSQL and read into data frame.
+
+* Missing or null values were checked within each ML code, post-database import -none found.
+
+* Column’s ‘Season’ and ‘Name’ assigned to separate data frame for later use.
+
+* Columns of no value dropped from data frame.
+
+* Columns determined from feature exploration - not needed columns were dropped.
+
+* Feature names were set as variable for later use.
+
+* Data set split into train/test sets.
+
+* Data scaled to normalize.
+
+* Checked that all values were numerical using "X.describe()".
+
+* Encoding was not used as all value-added data is numerical
+
+### Data Processing
+
+* Data (season_stats.csv) trained through ML model, feature importance explored
+
+* Features pruned
+
+* Data (cy_stats.csv) passed through ML model to predict target – ‘Position’
+
 ### Explain model choice:
-* Supervised Machine Learning models were chosen due to the data having a label(‘Position’).
+* Supervised Machine Learning models were chosen due to the data having a label "Position".
 
 ### Logistic Regression
 
@@ -160,12 +203,47 @@ The label is categorical. The term logistic regression usually refers to binary 
 The loss function during training is Log Loss. (Multiple Log Loss units can be placed in parallel for labels with more than two possible values.)
 The model has a linear architecture, not a deep neural network. However, the remainder of this definition also applies to deep models that predict probabilities for categorical labels.
 
+#### Limitations
+
+* If the number of observations is lesser than the number of features, Logistic Regression should not be used, otherwise, it may lead to overfitting.
+* The major limitation of Logistic Regression is the assumption of linearity between the dependent variable and the independent variables.
+
+#### Benefits
+
+* Logistic regression is easier to implement, interpret, and very efficient to train.
+* It makes no assumptions about distributions of classes in feature space.
+* It can easily extend to multiple classes (multinomial regression) and a natural probabilistic view of class predictions.
+* It is very fast at classifying unknown records.
+
 ![Logistic_Regression](./Images/Logistic_Regression_sample.png)
 
 <sub> Fig. 1.4 Logistic Regression plot. Credit srikarkatta.wordpress
 
 ### Decision Tree
 Decision Trees are a type of Supervised Machine Learning where the data is continuously split according to a certain parameter. The tree can be explained by two entities, namely decision nodes and leaves organized hierarchically. The leaves are the decisions or the final outcomes. And the decision nodes are where the data is split.
+
+#### Limitations
+* A small change in the data can cause a large change in the structure of the decision tree causing instability.
+
+* For a Decision tree sometimes, calculation can go far more complex compared to other algorithms.
+
+* Decision tree often involves higher time to train the model.
+
+* Decision tree training is relatively expensive as the complexity and time has taken are more.
+
+* The Decision Tree algorithm is inadequate for applying regression and predicting continuous values.
+
+#### Benefits
+* Compared to other algorithms decision trees requires less effort for data preparation during pre-processing.
+
+* A decision tree does not require normalization of data.
+
+* A decision tree does not require scaling of data as well.
+
+* Missing values in the data also do NOT affect the process of building a decision tree to any considerable extent.
+
+* A Decision tree model is very intuitive and easy to explain to technical teams as well as stakeholders.
+
 
 ![Desicion_tree](./Images/Decision_tree_schema.png)
 
@@ -176,6 +254,23 @@ Decision Trees are a type of Supervised Machine Learning where the data is conti
 Random Forest is perhaps the most popular classification algorithm, capable of both classification and regression and can accurately classify large volumes of data. The name “Random Forest” is derived from the fact that it is an ensemble of decision trees in which each decision tree is trained with a specific random noise, such as bagging.
 
 While individual trees might be “weak learners,” the principle of Random Forest is that together they can comprise a single “strong learner.”
+
+#### Limitations
+
+* Complexity: Random Forest creates a lot of trees (unlike only one tree in case of decision tree) and combines their outputs. By default, it creates 100 trees in Python sklearn library. To do so, this algorithm requires much more computational power and resources. On the other hand decision tree is simple and does not require so much computational resources.
+
+* Longer Training Period: Random Forest require much more time to train as compared to decision trees as it generates a lot of trees (instead of one tree in case of decision tree) and makes decision on most votes.
+
+#### Benefits
+* Are robust against overfitting as all those weak learners are trained on different pieces of the data.
+
+* Can be used to rank the importance of input variables in a natural way.
+
+* Can handle thousands of input variables without variable deletion.
+
+* Are robust to outliers and nonlinear data.
+
+* Run efficiently on large datasets.
 
 ![Random_Forest](./Images/Random_Forest_schema.png)
 
@@ -188,7 +283,7 @@ While individual trees might be “weak learners,” the principle of Random For
 
 <br/>
 
-## Results Overview:
+### Results Overview:
 
 ### Logistic Regression
 
@@ -250,13 +345,15 @@ While individual trees might be “weak learners,” the principle of Random For
 
 <br/>
 
-## Visualization:
+## Dashboard:
 
-Mark
+**Mark** need to update
 
-* We wil use **Tableau** as our main visualization plataform for Story telling.
+* Datasets (wnba_stats.csv, cy_stats.csv, cy_stats2.csv) loaded into Tableau
 
-* Also will use Matplotlib and Seaborn for our notebook, PP and README visualizations.
+* Storyboard created
+
+* Storyboard saved to Tableau public
 
 ## Deployment:
 
@@ -308,5 +405,3 @@ For our test_2 we created a dummy dataset using actual WNBA historical data and 
 [Google Machine Learning Glosary](https://developers.google.com/machine-learning/glossary#l)
 
 [Applied Computing and Informatics (Journal)](https://www.sciencedirect.com/science/article/pii/S2210832717301485)
-
-[WNBA Image: Credit KARE](https://media.kare11.com/assets/KARE/images/da18568b-9a32-4b67-8560-3ea9bb330207/da18568b-9a32-4b67-8560-3ea9bb330207_750x422.png)
