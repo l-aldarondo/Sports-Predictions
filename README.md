@@ -207,13 +207,13 @@ Opp_DRB% -- Defensive Rebound Percentage An estimate of the percentage of availa
 
 ![Stack_BarChart_Feature Impportance](./Images/Team_per_feature_importance.png)
 
-<sub>Fig 1.4 Teams per feature importance - visualization of feature_importance contribution to team performance
+<sub>Fig 1.4 Feature_Importance per team (2021-2002) - visualization of feature_importance contribution to team performance
 
 <br/>
 
 ![Heat_Map_Feature_Importance](./Images/Team_WL_PCT.png)
    
-<sub>Fig 1.5 Teams ranked per most important feature_importance - From all the featurs in the dataset, W/L% seems to have the most contribution.
+<sub>Fig 1.5 Teams ranked per most important feature_importance (2021-2022) - From all the featurs in the dataset, W/L% seems to have the most contribution.
 
 ### Explain model choice:
 * Supervised Machine Learning models were chosen due to the data having a label "Position".
