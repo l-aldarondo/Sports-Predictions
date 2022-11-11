@@ -34,7 +34,7 @@ Sport prediction is usually treated as a classification problem, with one class 
 4. Challenges during the project
 
 
-### Metodology:
+### Methodology:
 
 To achive our goal we will use CRISP-DM framework apporach:
 
