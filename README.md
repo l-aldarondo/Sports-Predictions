@@ -139,9 +139,9 @@ Opp_DRB% -- Defensive Rebound Percentage An estimate of the percentage of availa
 
 ### Presentation:
 
-**Mark** need to update
+[**Sports-Predictions Slides Presentation**](https://docs.google.com/presentation/d/10bAOWkrWM3veIdgE84QRVg1vOGXGeJDbY-aToJUFGBc/edit?usp=sharing)
 
-* We will create a Google Slides  for our live presentation.
+* Google Slides  for our live presentation.
 
 ### Database:
 
