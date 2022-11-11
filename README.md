@@ -46,7 +46,7 @@ To achive our goal we will use CRISP-DM framework apporach:
 
 ## Communication Protocol
 
-* Team is currently meet twice per week via Slack and communicate via DM as needed.
+* Team is currently meeting twice per week via Slack and communicate via DM as needed.
 
     * Leonardo - GitHub, Machine Learning.
     * Rafael - Dataset, Database
@@ -207,9 +207,13 @@ Opp_DRB% -- Defensive Rebound Percentage An estimate of the percentage of availa
 
 ![Stack_BarChart_Feature Impportance](./Images/Team_per_feature_importance.png)
 
+<sub>Fig 1.4 Teams per feature importance - visualization of feature_importance contribution to team performance
+
 <br/>
 
 ![Heat_Map_Feature_Importance](./Images/Team_WL_PCT.png)
+   
+<sub>Fig 1.5 Teams ranked per most important feature_importance - From all the featurs in the dataset, W/L% seems to have the most contribution.
 
 ### Explain model choice:
 * Supervised Machine Learning models were chosen due to the data having a label "Position".
@@ -237,7 +241,7 @@ The model has a linear architecture, not a deep neural network. However, the rem
 
 ![Logistic_Regression](./Images/Logistic_Regression_sample.png)
 
-<sub> Fig. 1.4 Logistic Regression plot. Credit srikarkatta.wordpress
+<sub> Fig. 1.6 Logistic Regression plot. Credit srikarkatta.wordpress
 
 ### Decision Tree
 Decision Trees are a type of Supervised Machine Learning where the data is continuously split according to a certain parameter. The tree can be explained by two entities, namely decision nodes and leaves organized hierarchically. The leaves are the decisions or the final outcomes. And the decision nodes are where the data is split.
@@ -267,7 +271,7 @@ Decision Trees are a type of Supervised Machine Learning where the data is conti
 
 ![Desicion_tree](./Images/Decision_tree_schema.png)
 
-<sub> Fig. 1.5 Decision Tree schema. Credit Google machine Learning Dictionary
+<sub> Fig. 1.7 Decision Tree schema. Credit Google machine Learning Dictionary
 
 ### Random Forest
 
@@ -294,7 +298,7 @@ While individual trees might be “weak learners,” the principle of Random For
 
 ![Random_Forest](./Images/Random_Forest_schema.png)
 
-<sub> Fig. 1.6 Random Forest schema. Credit insightsoftware
+<sub> Fig. 1.8 Random Forest schema. Credit insightsoftware
 
 <br/>
 
@@ -307,61 +311,61 @@ While individual trees might be “weak learners,” the principle of Random For
 
 ### Logistic Regression
 
-* Features were explored using coefficients, Recursive Feature Elimination (RFE) and Select from Model (SFM) methods for the Logistic Regression model. (Fig 1.7)
+* Features were explored using coefficients, Recursive Feature Elimination (RFE) and Select from Model (SFM) methods for the Logistic Regression model. (Fig 1.9)
 * All three methods produced lower accuracy results then using all features
 * All features used in model
-* Model accuracy score: **0.9241** (Fig. 1.8)
+* Model accuracy score: **0.9241** (Fig. 1.10)
 * Predicted winner test_1: **Las Vegas Aces (LVA) - 60.9%**
 * Predicted winner test_2: **Minnesota Lynx 29.5%**
 
 ![Logistic_Regression_feature_importance](./Images/LR_feature_importance.png)
 
-<sub> Fig. 1.7 Logistic Regression feature importance.
+<sub> Fig. 1.9 Logistic Regression feature importance.
 
 <br/>
 
 ![Logistic_Regression_accuracy_score](./Images/Logistic_Regression_accuracy.png)
 
-<sub> Fig. 1.8 Logistic Regression accuracy score.
+<sub> Fig. 1.10 Logistic Regression accuracy score.
 
 <br/>
 
 ### Decision Tree
-* Features were ranked using model.feature_importances_ (Fig. 1.9)
+* Features were ranked using model.feature_importances_ (Fig. 1.11)
 * The bottom 8 features played no importance in the model outcome or accuracy
 * Top 13 features used in model
-* Model accuracy score: **0.9241** (Fig. 1.10)
+* Model accuracy score: **0.9241** (Fig. 1.12)
 * Predicted winner test_1: The most probable winners were **Connecticut Sun and Las Vegas Aces**.
 * Predicted winner test_2: **Minnesota Lynx**
 
 ![Decision_Tree_feature_importance](./Images/DT_feature_importance.png)
 
-<sub> Fig. 1.9 Decision Tree feature importance.
+<sub> Fig. 1.11 Decision Tree feature importance.
 
 <br/>
 
 ![Decision_Tree_accuracy score](./Images/DT_accuracy_test.png)
 
-<sub> Fig. 1.10 Decision Tree accuracy score.
+<sub> Fig. 1.12 Decision Tree accuracy score.
 
 <br/>
 
 ### Random Forest
-* Features were ranked using model.feature_importances_ (Fig. 1.11)
+* Features were ranked using model.feature_importances_ (Fig. 1.13)
 * All features used to give model more data to train with
-* Model accuracy score: **0.9240** (Fig. 1.12)
+* Model accuracy score: **0.9240** (Fig. 1.14)
 * Predicted winner test_1: **Connecticut Sun - 77.0%**
 * Predicted winner test_2: **Minnesota Lynx 52.0%**
 
 ![Random_forest_feature_importance](./Images/RF_feature_importance.png)
 
-<sub> Fig. 1.11 Random Forest feature importance.
+<sub> Fig. 1.13 Random Forest feature importance.
 
 <br/>
 
 ![Random forest accuracy score](./Images/Random_Forest_accuracy.png)
 
-<sub> Fig. 1.12 Random forest accuracy score.
+<sub> Fig. 1.14 Random forest accuracy score.
 
 <br/>
 
