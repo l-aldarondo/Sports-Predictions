@@ -1,0 +1,12 @@
+   
+SELECT stats."Season" as PRE_SEASONS , 
+cy_stats."Season" AS CURRENT_YEAR_SEASON,
+stats."Tm" AS TEAM_NAME,
+stats."Win_pct" AS PRE_WIN_PCT,
+cy_stats."Win_pct" AS LAST_WIN_PCT 
+from public.stats INNER  join public.cy_stats  on stats."Tm" = cy_stats."Tm"
+WHERE stats."Season">='2010-01'
+GROUP BY  stats."Season", cy_stats."Season", stats."Position", 
+cy_stats."Position",stats."Tm",cy_stats."Tm",stats."Win_pct",
+cy_stats."Win_pct"
+ORDER BY stats."Tm" ASC
