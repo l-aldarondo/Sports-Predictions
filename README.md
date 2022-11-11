@@ -44,6 +44,16 @@ To achive our goal we will use CRISP-DM framework apporach:
 
 <br/>
 
+## Communication Protocol
+
+* Team is currently meet twice per week via Slack and communicate via DM as needed.
+
+    * Leonardo - GitHub, Machine Learning.
+    * Rafael - Dataset, Database
+    * Mark - Presentation, Visualization (Dashboard)
+
+<br/>
+
 ## Resources
 
 ### Database source
@@ -192,6 +202,14 @@ Opp_DRB% -- Defensive Rebound Percentage An estimate of the percentage of availa
 * Features pruned
 
 * Data (cy_stats.csv) passed through ML model to predict target – ‘Position’
+
+### Preliminary feature engineering and selection
+
+![Stack_BarChart_Feature Impportance](./Images/Team_per_feature_importance.png)
+
+<br/>
+
+![Heat_Map_Feature_Importance](./Images/Team_WL_PCT.png)
 
 ### Explain model choice:
 * Supervised Machine Learning models were chosen due to the data having a label "Position".
