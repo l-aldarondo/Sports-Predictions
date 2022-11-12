@@ -1,6 +1,65 @@
 # Sports-Predictions
 A machine learning framework for sport result prediction
 
+## Segment 2 Update:
+
+### Deliverable 2: The following items were completed
+
+#### GitHub
+
+The main branch should include:
+
+✓ All code necessary to perform
+exploratory analysis
+
+✓ Some code necessary to complete the
+machine learning portion of the project
+
+README.md must include:
+
+✓ Description of the communication
+protocols
+
+✓ Outline of the project (this may include
+images, but should be easy to follow and
+digest)
+
+Note: The descriptions and explanations
+required in all other project deliverables
+should also be in your README.md as
+part of your outline, unless otherwise
+noted
+
+Individual Branches:
+
+✓ At least one branch for each team
+member
+
+✓ Each team member has at least four
+commits for the duration of the second
+segment (eight total commits per person)
+Team members submit the code for their
+machine learning model, as well as the
+following: see ML section
+
+#### Machine Learning
+
+✓ Description of preliminary data
+preprocessing
+
+✓ Description of preliminary feature
+engineering and preliminary feature
+selection, including their decision-making
+process
+
+✓ Description of how data was split into
+training and testing sets
+
+✓ Explanation of model choice, including
+limitations and benefits
+
+<br/>
+
 ## Background
 
 ### How Does Machine Learning Predict Sports Match Outcomes?
