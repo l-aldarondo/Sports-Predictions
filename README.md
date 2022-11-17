@@ -412,7 +412,7 @@ For our test_2 we created a dummy dataset using actual WNBA historical data and 
  
 * Selecting what features to drop to improve our model accuracy was also challenging. Dropping features was based on feature_importance method, used to find the influence of each feature on our model accuracy. However we find out that dropping too many features would cause toe accuracy to drop.
 
-* Rafael/Mark
+* We had some challenges when selecting what type of dashboards to create. Choosing which features would showcase the nature of our project.
 
 * Rafael/Mark
 
