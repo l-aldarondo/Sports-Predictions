@@ -369,11 +369,13 @@ While individual trees might be “weak learners,” the principle of Random For
 
 <br/>
 
-## Dashboard:
+## [Machine Learning Storyboard](https://public.tableau.com/app/profile/leonardo.aldarondo/viz/WNBAPredictions/Story1)
+
+
+## Dashboard: Explore the Data Storyboard
 
 https://docs.google.com/presentation/d/10bAOWkrWM3veIdgE84QRVg1vOGXGeJDbY-aToJUFGBc/edit?usp=sharing
 
-**Mark** need to update
 
 * Datasets (wnba_stats.csv, cy_stats.csv, cy_stats2.csv) loaded into Tableau
 
