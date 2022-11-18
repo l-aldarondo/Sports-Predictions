@@ -369,7 +369,7 @@ While individual trees might be “weak learners,” the principle of Random For
 
 <br/>
 
-## [Machine Learning Storyboard](https://public.tableau.com/app/profile/leonardo.aldarondo/viz/WNBAPredictions/Story1)
+## [Machine Learning Storyboard](https://public.tableau.com/views/WNBAPredictions/Story1?:language=en-US&:display_count=n&:origin=viz_share_link)
 
 
 ## Dashboard: Explore the Data Storyboard
