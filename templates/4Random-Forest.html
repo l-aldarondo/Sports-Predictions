@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="INTUITIVE">
+    <meta name="description" content="">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>4Random Forest</title>
+    <link rel="stylesheet" href="../static/css/nicepage.css" media="screen">
+<link rel="stylesheet" href="../static/css/4Random-Forest.css" media="screen">
+    <script class="u-script" type="text/javascript" src="../static/js/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="../static/js/nicepage.js" defer=""></script>
+    <meta name="generator" content="Nicepage 3.30.2, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+    
+    
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "NBA Prediction",
+		"sameAs": [
+				"https://github.com/fatehluqman",
+				"https://www.linkedin.com/in/fatehluqman/",
+				"https://www.linkedin.com/in/jason-boyer7/",
+				"https://github.com/boyerjason700"
+		]
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="4Random Forest">
+    <meta property="og:description" content="">
+    <meta property="og:type" content="website">
+  </head>
+  <body class="u-body u-overlap u-overlap-contrast"><header class="u-clearfix u-grey-10 u-header u-sticky u-sticky-0daf u-header" id="sec-28bc"><div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <nav class="u-menu u-menu-dropdown u-offcanvas u-menu-1">
+          <div class="menu-collapse">
+            <a class="u-button-style u-nav-link" href="#">
+              <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#menu-hamburger"></use></svg>
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><symbol id="menu-hamburger" viewBox="0 0 16 16" style="width: 16px; height: 16px;"><rect y="1" width="16" height="2"></rect><rect y="7" width="16" height="2"></rect><rect y="13" width="16" height="2"></rect>
+</symbol>
+</defs></svg>
+            </a>
+          </div>
+          <div class="u-custom-menu u-nav-container">
+            <ul class="u-nav u-spacing-2 u-unstyled u-nav-1"><li class="u-nav-item"><a class="u-active-palette-1-base u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-hover-palette-1-light-1 u-nav-link u-text-active-white u-text-grey-90 u-text-hover-palette-5-base" href="../index.html" style="padding: 10px 12px;">Home</a>
+            </li><li class="u-nav-item"><a class="u-active-palette-1-base u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-hover-palette-1-light-1 u-nav-link u-text-active-white u-text-grey-90 u-text-hover-palette-5-base" href="../index.html#sec-df2f" data-page-id="80299425" style="padding: 10px 12px;">About</a>
+            </li><li class="u-nav-item"><a class="u-active-palette-1-base u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-hover-palette-1-light-1 u-nav-link u-text-active-white u-text-grey-90 u-text-hover-palette-5-base" href="../index.html#carousel_fab6" data-page-id="80299425" style="padding: 10px 12px;">Tabluea Chart</a>
+            </li><li class="u-nav-item"><a class="u-active-palette-1-base u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-hover-palette-1-light-1 u-nav-link u-text-active-white u-text-grey-90 u-text-hover-palette-5-base" href="../index.html#sec-c072" data-page-id="80299425" style="padding: 10px 12px;">Machine Learning Models</a>
+            </li><li class="u-nav-item"><a class="u-active-palette-1-base u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-hover-palette-1-light-1 u-nav-link u-text-active-white u-text-grey-90 u-text-hover-palette-5-base" href="../index.html#sec-02d7" data-page-id="80299425" style="padding: 10px 12px;">Prediction</a>
+            </li><li class="u-nav-item"><a class="u-active-palette-1-base u-border-active-palette-1-base u-border-hover-palette-1-base u-button-style u-hover-palette-1-light-1 u-nav-link u-text-active-white u-text-grey-90 u-text-hover-palette-5-base" href="../index.html#sec-4a40" data-page-id="80299425" style="padding: 10px 12px;">Summary</a>
+</li></ul>
+          </div>
+          <div class="u-custom-menu u-nav-container-collapse">
+            <div class="u-black u-container-style u-inner-container-layout u-opacity u-opacity-95 u-sidenav">
+              <div class="u-inner-container-layout u-sidenav-overflow">
+                <div class="u-menu-close"></div>
+                <ul class="u-align-center u-nav u-popupmenu-items u-unstyled u-nav-2"><li class="u-nav-item"><a class="u-button-style u-nav-link" href="../index.html" style="padding: 10px 12px;">Home</a>
+                </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="../index.html#sec-df2f" data-page-id="80299425" style="padding: 10px 12px;">About</a>
+                </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="../index.html#carousel_fab6" data-page-id="80299425" style="padding: 10px 12px;">Tabluea Chart</a>
+                </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="../index.html#sec-c072" data-page-id="80299425" style="padding: 10px 12px;">Machine Learning Models</a>
+                </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="../index.html#sec-02d7" data-page-id="80299425" style="padding: 10px 12px;">Prediction</a>
+                </li><li class="u-nav-item"><a class="u-button-style u-nav-link" href="../index.html#sec-4a40" data-page-id="80299425" style="padding: 10px 12px;">Summary</a>
+</li></ul>
+              </div>
+            </div>
+            <div class="u-black u-menu-overlay u-opacity u-opacity-70"></div>
+          </div>
+        </nav>
+      </div><style class="u-sticky-style" data-style-id="b272">.u-sticky-fixed.u-sticky-b272:before, .u-body.u-sticky-fixed .u-sticky-b272:before {
+borders: top right bottom left !important
+}</style></header>
+    <section class="skrollable u-clearfix u-image u-parallax u-shading u-section-1" id="sec-2702" data-image-width="1400" data-image-height="1050">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div class="u-clearfix u-expanded-width u-gutter-10 u-layout-wrap u-layout-wrap-1">
+          <div class="u-layout" style="">
+            <div class="u-layout-row" style="">
+              <div class="u-align-center u-container-style u-image u-layout-cell u-left-cell u-size-30 u-size-xs-60 u-image-1" src="" data-image-width="773" data-image-height="418">
+                <div class="u-container-layout u-valign-middle u-container-layout-1" src=""></div>
+              </div>
+              <div class="u-container-style u-layout-cell u-right-cell u-size-30 u-size-xs-60 u-layout-cell-2" src="">
+                <div class="u-container-layout u-valign-middle u-container-layout-2">
+                  <h2 class="u-align-center u-text u-text-default u-text-1">Random Forest Classifier</h2>
+                  <p class="u-align-center u-text u-text-2">A Random Forest is actually a bunch of decision trees bundled together(that's why it's called a forest).&nbsp; It is one of the most used algorithms, because of its simplicity and diversity.</p>
+                  <a href="4Random-Forest.html#sec-073b" data-page-id="694605391" class="u-btn u-btn-round u-button-style u-radius-50 u-btn-1">learn more</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-2" id="sec-073b">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="fr-view u-align-center u-clearfix u-rich-text u-text u-text-1">
+          <h1 style="text-align: center;">Random Forest Classification</h1>
+          <p style="text-align: center;">Random forests or random decision forests are an ensemble learning method for classification, regression and other tasks that operates by constructing a multitude of decision trees at training time. For classification tasks, the output of the random forest is the class selected by most trees. For regression tasks, the mean or average prediction of the individual trees is returned. Random decision forests correct for decision trees' habit of overfitting to their training set.  Random forests generally outperform decision trees, but their accuracy is lower than gradient boosted trees. However, data characteristics can affect their performance.</p>
+          <p style="text-align: center;">For our project, we will use a Random Forest Classifier.</p>
+          <p style="text-align: center;">&nbsp;<span style="line-height: 2.0;">
+              <!--<img src="../images/rf_import.png" align="center" style="width: 807px;" class="fr-dii fr-fic fr-fir" width="525">After cleaning is done to the datasets, they are both inserted into a PostgreSQL database. &nbsp;From there, we import them into our Model for training.-->
+              <img src="static/images/Logistic_Regression_1.png" align="center" style="width: 807px;" class="fr-dii fr-fic fr-fir" width="525">After cleaning is done to the datasets, they are both inserted into a PostgreSQL database. &nbsp;From there, we import them into our Model for training.
+            </span>
+          </p>
+        </div>
+        <div class="fr-view u-align-center u-clearfix u-rich-text u-text u-text-2">
+          <p style="text-align: center;">
+            <br>
+          </p>
+          <p style="text-align: center;">This model is set up the same as the Logistic Regression and Decision Tree model. &nbsp;Unneeded features are dropped, the 'Position' feature is set as the target, and the remaining features are assigned to the variable X. &nbsp;Then we will split the data into 4 groups, used to train and test the model.</p>
+          <p style="text-align: center;">
+            <span style="line-height: 2.0;">
+              <!--<img src="../images/rf_split.png" align="center" style="width: 547px;" class="fr-dib fr-fic" width="492">The Random Forest model is a type of ensemble algorithm that builds a 'forest' of decisions trees, trained with the 'bagging' method. &nbsp;This method takes multiple samples of the training data and constructs models for each data sample, and each models predictions are averaged to give a better estimate of the output value.-->
+              <img src="static/images/rf_split.png" align="center" style="width: 547px;" class="fr-dib fr-fic" width="492">The Random Forest model is a type of ensemble algorithm that builds a 'forest' of decisions trees, trained with the 'bagging' method. &nbsp;This method takes multiple samples of the training data and constructs models for each data sample, and each models predictions are averaged to give a better estimate of the output value.
+            </span>
+          </p>
+          <p style="text-align: center;">
+            <span style="line-height: 2.0;">
+              <!--<img src="../images/ForestofDecisionTrees.png" width="492" style="width: 805px;" class="fr-dib fr-fic">-->
+              <img src="static/images/ForestofDecisionTrees.png" width="492" style="width: 805px;" class="fr-dib fr-fic">
+              
+            </span>
+          </p>
+        </div>
+        <div class="fr-view u-align-center u-clearfix u-rich-text u-text u-text-3">
+          <p style="text-align: center;">We can find the accuracy score by passing the test sets through the model. &nbsp;This shows that by training our model with X_train and y_train, it is 92.4% accurate at choosing a correct outcome for the target 'Position'.<span style="line-height: 2.0;">
+              <!--<img src="../images/rf_accuracy.png" align="center" style="width: 683px;" class="fr-dib fr-fic" width="374">-->
+              <img src="static/images/random-forest-1.png" align="center" style="width: 805px;" class="fr-dib fr-fic" width="374">
+
+              
+            </span>
+          </p>
+        </div>
+        <div class="fr-view u-align-center u-clearfix u-rich-text u-text u-text-4">
+          <p style="text-align: center;">
+            <!--<span style="line-height: 2.0;">Defining feature importance was more of a challenge with the Random Forest model. &nbsp;The ranking of the features changed each time the model was reloaded and ran again. &nbsp;The top 3 features did stay consistent during each reload so we chose to remove the remaining features. &nbsp;Upon testing the accuracy score after the features were removed, it showed to drop the accuracy slightly. &nbsp;We then chose to include all features to give the model more data to train and 'learn' from.<img src="../images/rf_feat_import.png" align="center" style="width: 456px;" class="fr-dib fr-fic" width="448">&nbsp;Once the team names and season features are set into their own dataframe, our model is ready for the current year stats to be passed through and give us a prediction. &nbsp;As with the Logistic and Decision models, the prediction outcome array is set to a dataframe and joined with the name dataframe.-->
+              <span style="line-height: 2.0;">Defining feature importance was more of a challenge with the Random Forest model. &nbsp;The ranking of the features changed each time the model was reloaded and ran again. &nbsp;The top 3 features did stay consistent during each reload so we chose to remove the remaining features. &nbsp;Upon testing the accuracy score after the features were removed, it showed to drop the accuracy slightly. &nbsp;We then chose to include all features to give the model more data to train and 'learn' from.<img src="C:/Users/rafae/OneDrive/Desktop/FINAL_PROJECT/static/images/RF_feature_importance.png" align="center" style="width: 456px;" class="fr-dib fr-fic" width="448">&nbsp;Once the team names and season features are set into their own dataframe, our model is ready for the current year stats to be passed through and give us a prediction. &nbsp;As with the Logistic and Decision models, the prediction outcome array is set to a dataframe and joined with the name dataframe.
+            </span>
+          </p>
+          <p style="text-align: center;">
+            <span style="line-height: 2.0;">
+              <img src="static/images/random-forest-2.png" width="492" style="width: 805px;" class="fr-dib fr-fic">
+            </span>
+          </p>
+          <p style="text-align: center;">
+            <br>
+          </p>
+          <h4>Head over to the Prediction Outcome section to see which&nbsp;</h4>
+          <h4>team the Random Forest model predicted to be the 2022 champs!</h4>
+        </div>
+      </div>
+    </section>
+    <section class="u-clearfix u-section-3" id="sec-3ea9">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div class="u-list u-list-1">
+          <div class="u-repeater u-repeater-1">
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-1">
+                <img alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-1" data-image-width="2244" data-image-height="2048" src="static/images/ramdom_forest_logo.png" data-href="https://en.wikipedia.org/wiki/Logistic_regression" data-target="_blank">
+                <h3 class="u-align-center u-text u-text-default u-text-1">Random Forest</h3>
+                <p class="u-align-center u-text u-text-2">Learn more about Random Forest Classification from Wikipedia.</p>
+                <a href="https://en.wikipedia.org/wiki/Random_forest" class="u-active-none u-border-2 u-border-hover-palette-2-base u-border-palette-2-light-1 u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-1" target="_blank">Wikipedia</a>
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item" data-href="4Random-Forest.html#sec-2702" data-page-id="694605391">
+              <div class="u-container-layout u-similar-container u-container-layout-2">
+                <img alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-2" data-image-width="575" data-image-height="447" src="static/images/lg_logo.png">
+                <h3 class="u-align-center u-text u-text-default u-text-3">Logistic Regression</h3>
+                <p class="u-align-center u-text u-text-4">See how our Logistic Regression model was set up</p>
+                <a href="2Logistic-Regression.html" data-page-id="2799000724" class="u-active-none u-border-2 u-border-hover-palette-2-base u-border-palette-2-light-1 u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-2">Logistic Regression</a>
+              </div>
+            </div>
+            <div class="u-container-style u-list-item u-repeater-item">
+              <div class="u-container-layout u-similar-container u-container-layout-3">
+                <img alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-3" data-image-width="222" data-image-height="430" src="static/images/wnba_trophy1.jpg" data-href="1Home.html#sec-6c94" data-page-id="80299425">
+                <h3 class="u-align-center u-text u-text-default u-text-5">Prediction outcome</h3>
+                <p class="u-align-center u-text u-text-6">Skip straight to the prediction!<br>What's your guess?
+                </p>
+                <a href="../index.html#sec-02d7" data-page-id="80299425" class="u-active-none u-border-2 u-border-hover-palette-2-base u-border-palette-2-light-1 u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-3">Who wins?</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <style class="u-overlap-style">.u-overlap:not(.u-sticky-scroll) .u-header {
+background-color: #f2f2f2 !important
+}</style>
+    
+    
+    <footer class="u-align-center-md u-align-center-sm u-align-center-xs u-clearfix u-footer u-grey-80" id="sec-5509"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-align-center-lg u-align-center-md u-align-center-xl u-text u-text-1"></p>
+        <p class="u-align-center-lg u-align-center-md u-align-center-xl u-text u-text-2">2022</p>
+        <div class="u-align-left u-social-icons u-spacing-10 u-social-icons-1">
+         
+        </div>
+      </div></footer>
+  </body>
+</html>
