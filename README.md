@@ -172,27 +172,27 @@ Opp_DRB% -- Defensive Rebound Percentage An estimate of the percentage of availa
 ## Machine Learning Model
 
 ### Preliminary data preprocessing
-
+ 
 * Missing or null values were checked pre-database creation-none found.
-
-* Import from PostgreSQL and read into data frame.
-
+ 
+* Import from PostgreSQL and read into the data frame.
+ 
 * Missing or null values were checked within each ML code, post-database import -none found.
-
-* Column’s ‘Season’ and ‘Name’ assigned to separate data frame for later use.
-
-* Columns of no value dropped from data frame.
-
+ 
+* Column’s ‘Season’ and ‘Name’ assigned to separate data frames for later use.
+ 
+* Columns of no value dropped from the data frame.
+ 
 * Columns determined from feature exploration - not needed columns were dropped.
-
-* Feature names were set as variable for later use.
-
+ 
+* Feature names were set as variables for later use.
+ 
 * Data set split into train/test sets.
-
+ 
 * Data scaled to normalize.
-
+ 
 * Checked that all values were numerical using "X.describe()".
-
+ 
 * Encoding was not used as all value-added data is numerical
 
 ### Data Processing
@@ -258,7 +258,7 @@ Decision Trees are a type of Supervised Machine Learning where the data is conti
 * The Decision Tree algorithm is inadequate for applying regression and predicting continuous values.
 
 #### Benefits
-* Compared to other algorithms decision trees requires less effort for data preparation during pre-processing.
+* Compared to other algorithms, decision trees requires less effort for data preparation during pre-processing.
 
 * A decision tree does not require normalization of data.
 
@@ -274,26 +274,27 @@ Decision Trees are a type of Supervised Machine Learning where the data is conti
 <sub> Fig. 1.7 Decision Tree schema. Credit Google machine Learning Dictionary
 
 ### Random Forest
-
+ 
 Random Forest is perhaps the most popular classification algorithm, capable of both classification and regression and can accurately classify large volumes of data. The name “Random Forest” is derived from the fact that it is an ensemble of decision trees in which each decision tree is trained with a specific random noise, such as bagging.
-
+ 
 While individual trees might be “weak learners,” the principle of Random Forest is that together they can comprise a single “strong learner.”
-
+ 
 #### Limitations
-
-* Complexity: Random Forest creates a lot of trees (unlike only one tree in case of decision tree) and combines their outputs. By default, it creates 100 trees in Python sklearn library. To do so, this algorithm requires much more computational power and resources. On the other hand decision tree is simple and does not require so much computational resources.
-
-* Longer Training Period: Random Forest require much more time to train as compared to decision trees as it generates a lot of trees (instead of one tree in case of decision tree) and makes decision on most votes.
-
+ 
+* Complexity: Random Forest creates a lot of trees (unlike only one tree in case of decision tree) and combines their outputs. By default, it creates 100 trees in the Python sklearn library. To do so, this algorithm requires much more computational power and resources. On the other hand, the decision tree is simple and does not require so much computational resources.
+ 
+* Longer Training Period: Random Forest requires much more time to train as compared to decision trees as it generates a lot of trees (instead of one tree in case of decision tree) and makes decisions on most votes.
+ 
 #### Benefits
+   
 * Are robust against overfitting as all those weak learners are trained on different pieces of the data.
-
+ 
 * Can be used to rank the importance of input variables in a natural way.
-
+ 
 * Can handle thousands of input variables without variable deletion.
-
+ 
 * Are robust to outliers and nonlinear data.
-
+ 
 * Run efficiently on large datasets.
 
 ![Random_Forest](./Images/Random_Forest_schema.png)
@@ -396,25 +397,26 @@ While individual trees might be “weak learners,” the principle of Random For
    
 ## Summary:
 
-* The accuracy for the three models were very close, with the highest accuracy achived by Logistic Regression, and  Desicion Tree with **92.41%**
-* For our test_1, season 2022 was used as curren year data:
+* The accuracy for the three models were very close, with the highest accuracy achieved by Logistic Regression, and  Decision Tree with **92.41%**
+* For our test_1, season 2022 was used as current year data:
     * The three models were able to accurate predict the most probable winner for season 2022 - **Las Vegas Aces**
-    * The three models were able to accurate predict the most probable 2nd place or subchampion for season 2022 - **Conneticut Sun**
+    * The three models were able to accurate predict the most probable 2nd place or sub champion for season 2022 - **Connecticut Sun**
+ 
+* For our test_2, a random WNBA historical data was used to create season data to be used as current.
+    * The three models were able to accurate predict the most likely winner from a random dummy season - **Minnesota Lynx**
 
-* For our test_2, a random WNBA historical data was used to create season data to be use as current.
-    * The three models were able to accurate predict the most likely winner from a random dummie season - **Minnesota Lynx**
 
-Actual results: 
-For our test_1 we used the last season of WNBA data as current year. The models did a good job predicting the most probable winners for the season (2022). During the regular season, the Conneticut Suns arrived in 1st place and the Las Vegas Aces arrived in 2nd place, however the Las vegas Aces won the championship. This correrlates with all our models that had COS in 1st place and LAV in 2nd place. The data analysis demostrate that not always the team with the best record and stats wins the championship. There are other factors that can influence the outcome of a season, like team cohesion, experience, coaching, ect.
+Actual results: For our test_1 we used the last season of WNBA data as current year. The models did a good job predicting the most probable winners for the season (2022). During the regular season, the Connecticut Suns arrived in 1st place and the Las Vegas Aces arrived in 2nd place, however the Las Vegas Aces won the championship. This correlates with all our models that had COS in 1st place and LAV in 2nd place. The data analysis demonstrates that not always the team with the best record and stats wins the championship. There are other factors that can influence the outcome of a season, like team cohesion, experience, coaching, etc.
+   
+For our test_2 we created a dummy dataset using actual WNBA historical data and used it as "current year". The intention was to evaluate if the model was able to accurately predict a winner with an unknown dataset. All 3 models were able to predict the most probable winner, the Minnesota Lynx. The 3 models did a great job predicting a most probable winner based on team stats as the Minnesota Lynx were the team with the best stats and greater margin over victory among all the teams in the dataset. Actual results: the Minnesota Lynx was the WNBA champion for season 2017.
 
-For our test_2 we created a dummy dataset using actual WNBA historical data and used as "current year". The intention was to evaluate if the model was able to acurate predict a winer with an unknown dataset. All 3 models were able to predict the most probable winner, the Minnesota Lynx. The 3 models did a great job predicting a most probable winner based in team stats as the Minnesota Lynx were the team with the best statst and greater margin over victory amoung all the teams in the dataset. Actual results: the Minnesota Lynx was the WNBA champion for season 2017.
 
 ## Challenges:
-
+ 
 * We had some challenges during the feature exploration, understanding which method to use to find feature importance for each model was an important factor for the ML model since that could affect the overall model performance.
  
-* Selecting what features to drop to improve our model accuracy was also challenging. Dropping features was based on feature_importance method, used to find the influence of each feature on our model accuracy. However we find out that dropping too many features would cause toe accuracy to drop.
-
+* Selecting what features to drop to improve our model accuracy was also challenging. Dropping features was based on the feature_importance method, used to find the influence of each feature on our model accuracy. However we find out that dropping too many features would cause toe accuracy to drop.
+ 
 * We had some challenges when selecting what type of dashboards to create. Choosing which features would showcase the nature of our project.
 
 <br/>
