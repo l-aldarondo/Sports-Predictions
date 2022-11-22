@@ -311,7 +311,7 @@ While individual trees might be “weak learners,” the principle of Random For
 
 ### Logistic Regression
 
-* Features were explored using coefficients, Recursive Feature Elimination (RFE) and Select from Model (SFM) methods for the Logistic Regression model. (Fig 1.9)
+* Features were explored using Coefficients **(COEF)**, Recursive Feature Elimination **(RFE)** and Select from Model **(SFM)** methods for the Logistic Regression model. (Fig 1.9)
 * All three methods produced lower accuracy results then using all features
 * All features used in model
 * Model accuracy score: **0.9241** (Fig. 1.10)
@@ -374,7 +374,7 @@ While individual trees might be “weak learners,” the principle of Random For
 
 ## [Dashboard: Explore the Data Storyboard](https://public.tableau.com/views/WNBAPredictionData/Story1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
 
-https://docs.google.com/presentation/d/10bAOWkrWM3veIdgE84QRVg1vOGXGeJDbY-aToJUFGBc/edit?usp=sharing
+## [WNBA Predictions Google Slides Presentation](https://docs.google.com/presentation/d/10bAOWkrWM3veIdgE84QRVg1vOGXGeJDbY-aToJUFGBc/edit?usp=sharing)
 
 
 * Datasets (wnba_stats.csv, cy_stats.csv, cy_stats2.csv) loaded into Tableau
