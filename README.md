@@ -372,7 +372,7 @@ While individual trees might be “weak learners,” the principle of Random For
 ## [Machine Learning Storyboard](https://public.tableau.com/views/WNBAPredictions/Story1?:language=en-US&:display_count=n&:origin=viz_share_link)
 
 
-## Dashboard: Explore the Data Storyboard
+## [Dashboard: Explore the Data Storyboard](https://public.tableau.com/views/WNBAPredictionData/Story1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
 
 https://docs.google.com/presentation/d/10bAOWkrWM3veIdgE84QRVg1vOGXGeJDbY-aToJUFGBc/edit?usp=sharing
 
@@ -384,15 +384,9 @@ https://docs.google.com/presentation/d/10bAOWkrWM3veIdgE84QRVg1vOGXGeJDbY-aToJUF
 * Storyboard saved to Tableau public  https://public.tableau.com/views/WNBAPredictionData/Story1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link
 
 
-
-
 ## Deployment:
 
-Mark/Rafael/Leonardo
-
-* We will use Javascript, HTML/CSS to create a webpage to deploy our project
-
-* webpage may be hosted at github pages or clouflare pages, but will explore other rich content options. 
+### [WNBA Predictions Web Page](https://rafajos20.github.io/Wnba_predictions/)
 
 ## Summary:
 
@@ -416,10 +410,6 @@ For our test_2 we created a dummy dataset using actual WNBA historical data and 
 * Selecting what features to drop to improve our model accuracy was also challenging. Dropping features was based on feature_importance method, used to find the influence of each feature on our model accuracy. However we find out that dropping too many features would cause toe accuracy to drop.
 
 * We had some challenges when selecting what type of dashboards to create. Choosing which features would showcase the nature of our project.
-
-* Rafael/Mark
-
-* Rafael/Mark
 
 <br/>
 
