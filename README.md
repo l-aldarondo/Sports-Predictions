@@ -369,14 +369,18 @@ While individual trees might be “weak learners,” the principle of Random For
 
 <br/>
 
-## [Machine Learning Storyboard](https://public.tableau.com/views/WNBAPredictions/Story1?:language=en-US&:display_count=n&:origin=viz_share_link)
+## Dashboards & Visualizations
+   
+* ### [Machine Learning Storyboard](https://public.tableau.com/views/WNBAPredictions/Story1?:language=en-US&:display_count=n&:origin=viz_share_link)
 
 
-## [Dashboard: Explore the Data Storyboard](https://public.tableau.com/views/WNBAPredictionData/Story1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
+* ### [Dashboard: Explore the Data Storyboard](https://public.tableau.com/views/WNBAPredictionData/Story1?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link)
 
-## [WNBA Predictions Google Slides Presentation](https://docs.google.com/presentation/d/10bAOWkrWM3veIdgE84QRVg1vOGXGeJDbY-aToJUFGBc/edit?usp=sharing)
+* ### [WNBA Predictions Google Slides Presentation](https://docs.google.com/presentation/d/10bAOWkrWM3veIdgE84QRVg1vOGXGeJDbY-aToJUFGBc/edit?usp=sharing)
 
-
+#### Resources
+* Tableau Public
+   
 * Datasets (wnba_stats.csv, cy_stats.csv, cy_stats2.csv) loaded into Tableau
 
 * Storyboard created
@@ -386,8 +390,10 @@ While individual trees might be “weak learners,” the principle of Random For
 
 ## Deployment:
 
-### [WNBA Predictions Web Page](https://rafajos20.github.io/Wnba_predictions/)
+* ### [WNBA Predictions Web Page](https://rafajos20.github.io/Wnba_predictions/)
 
+<br/>
+   
 ## Summary:
 
 * The accuracy for the three models were very close, with the highest accuracy achived by Logistic Regression, and  Desicion Tree with **92.41%**
