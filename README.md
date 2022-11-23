@@ -392,7 +392,7 @@ While individual trees might be “weak learners,” the principle of Random For
 
 ## Deployment:
 
-* ### [WNBA Predictions Web Page](https://rafajos20.github.io/wnba_predictions/)
+* ### [WNBA Predictions Web Page](https://sports-predictions.pages.dev/)
 
 <br/>
    
