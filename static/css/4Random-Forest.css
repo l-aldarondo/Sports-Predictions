@@ -1,6 +1,6 @@
 .u-section-1 {
     /*background-image: linear-gradient(0deg, rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("../../images/basketball-wallpaper-200708142245521400x1050.jpg");*/
-    background-image: linear-gradient(0deg, rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("static/images/ramdom_forest_bg.png");
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("../../images/ramdom_forest_bg.png");
   }
   
   .u-section-1 .u-sheet-1 {
@@ -17,7 +17,7 @@
     min-height: 431px;
     pointer-events: auto;
     /*background-image: url("../../images/how-random-forest-classifier-work.png");*/
-    background-image: url("static/images/random-forest-classifier.png");
+    background-image: url("../../images/random-forest-classifier.png");
     
     background-position: 56.76% 50%;
   }

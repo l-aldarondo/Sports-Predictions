@@ -22,10 +22,7 @@
 		"@type": "Organization",
 		"name": "NBA Prediction",
 		"sameAs": [
-				"https://github.com/fatehluqman",
-				"https://www.linkedin.com/in/fatehluqman/",
-				"https://www.linkedin.com/in/jason-boyer7/",
-				"https://github.com/boyerjason700"
+				
 		]
 }</script>
     <meta name="theme-color" content="#478ac9">
@@ -99,7 +96,7 @@ borders: top right bottom left !important
           <p style="text-align: center;">For our project, we will use a Random Forest Classifier.</p>
           <p style="text-align: center;">&nbsp;<span style="line-height: 2.0;">
               <!--<img src="../images/rf_import.png" align="center" style="width: 807px;" class="fr-dii fr-fic fr-fir" width="525">After cleaning is done to the datasets, they are both inserted into a PostgreSQL database. &nbsp;From there, we import them into our Model for training.-->
-              <img src="static/images/Logistic_Regression_1.png" align="center" style="width: 807px;" class="fr-dii fr-fic fr-fir" width="525">After cleaning is done to the datasets, they are both inserted into a PostgreSQL database. &nbsp;From there, we import them into our Model for training.
+              <img src="../images/Logistic_Regression_1.png" align="center" style="width: 807px;" class="fr-dii fr-fic fr-fir" width="525">After cleaning is done to the datasets, they are both inserted into a PostgreSQL database. &nbsp;From there, we import them into our Model for training.
             </span>
           </p>
         </div>
@@ -111,13 +108,13 @@ borders: top right bottom left !important
           <p style="text-align: center;">
             <span style="line-height: 2.0;">
               <!--<img src="../images/rf_split.png" align="center" style="width: 547px;" class="fr-dib fr-fic" width="492">The Random Forest model is a type of ensemble algorithm that builds a 'forest' of decisions trees, trained with the 'bagging' method. &nbsp;This method takes multiple samples of the training data and constructs models for each data sample, and each models predictions are averaged to give a better estimate of the output value.-->
-              <img src="static/images/rf_split.png" align="center" style="width: 547px;" class="fr-dib fr-fic" width="492">The Random Forest model is a type of ensemble algorithm that builds a 'forest' of decisions trees, trained with the 'bagging' method. &nbsp;This method takes multiple samples of the training data and constructs models for each data sample, and each models predictions are averaged to give a better estimate of the output value.
+              <img src="../images/rf_split.png" align="center" style="width: 547px;" class="fr-dib fr-fic" width="492">The Random Forest model is a type of ensemble algorithm that builds a 'forest' of decisions trees, trained with the 'bagging' method. &nbsp;This method takes multiple samples of the training data and constructs models for each data sample, and each models predictions are averaged to give a better estimate of the output value.
             </span>
           </p>
           <p style="text-align: center;">
             <span style="line-height: 2.0;">
               <!--<img src="../images/ForestofDecisionTrees.png" width="492" style="width: 805px;" class="fr-dib fr-fic">-->
-              <img src="static/images/ForestofDecisionTrees.png" width="492" style="width: 805px;" class="fr-dib fr-fic">
+              <img src="../images/ForestofDecisionTrees.png" width="492" style="width: 805px;" class="fr-dib fr-fic">
               
             </span>
           </p>
@@ -125,7 +122,7 @@ borders: top right bottom left !important
         <div class="fr-view u-align-center u-clearfix u-rich-text u-text u-text-3">
           <p style="text-align: center;">We can find the accuracy score by passing the test sets through the model. &nbsp;This shows that by training our model with X_train and y_train, it is 92.4% accurate at choosing a correct outcome for the target 'Position'.<span style="line-height: 2.0;">
               <!--<img src="../images/rf_accuracy.png" align="center" style="width: 683px;" class="fr-dib fr-fic" width="374">-->
-              <img src="static/images/random-forest-1.png" align="center" style="width: 805px;" class="fr-dib fr-fic" width="374">
+              <img src="../images/random-forest-1.png" align="center" style="width: 805px;" class="fr-dib fr-fic" width="374">
 
               
             </span>
@@ -134,12 +131,12 @@ borders: top right bottom left !important
         <div class="fr-view u-align-center u-clearfix u-rich-text u-text u-text-4">
           <p style="text-align: center;">
             <!--<span style="line-height: 2.0;">Defining feature importance was more of a challenge with the Random Forest model. &nbsp;The ranking of the features changed each time the model was reloaded and ran again. &nbsp;The top 3 features did stay consistent during each reload so we chose to remove the remaining features. &nbsp;Upon testing the accuracy score after the features were removed, it showed to drop the accuracy slightly. &nbsp;We then chose to include all features to give the model more data to train and 'learn' from.<img src="../images/rf_feat_import.png" align="center" style="width: 456px;" class="fr-dib fr-fic" width="448">&nbsp;Once the team names and season features are set into their own dataframe, our model is ready for the current year stats to be passed through and give us a prediction. &nbsp;As with the Logistic and Decision models, the prediction outcome array is set to a dataframe and joined with the name dataframe.-->
-              <span style="line-height: 2.0;">Defining feature importance was more of a challenge with the Random Forest model. &nbsp;The ranking of the features changed each time the model was reloaded and ran again. &nbsp;The top 3 features did stay consistent during each reload so we chose to remove the remaining features. &nbsp;Upon testing the accuracy score after the features were removed, it showed to drop the accuracy slightly. &nbsp;We then chose to include all features to give the model more data to train and 'learn' from.<img src="C:/Users/rafae/OneDrive/Desktop/FINAL_PROJECT/static/images/RF_feature_importance.png" align="center" style="width: 456px;" class="fr-dib fr-fic" width="448">&nbsp;Once the team names and season features are set into their own dataframe, our model is ready for the current year stats to be passed through and give us a prediction. &nbsp;As with the Logistic and Decision models, the prediction outcome array is set to a dataframe and joined with the name dataframe.
+              <span style="line-height: 2.0;">Defining feature importance was more of a challenge with the Random Forest model. &nbsp;The ranking of the features changed each time the model was reloaded and ran again. &nbsp;The top 3 features did stay consistent during each reload so we chose to remove the remaining features. &nbsp;Upon testing the accuracy score after the features were removed, it showed to drop the accuracy slightly. &nbsp;We then chose to include all features to give the model more data to train and 'learn' from.<img src="../images/RF_feature_importance.png" align="center" style="width: 456px;" class="fr-dib fr-fic" width="448">&nbsp;Once the team names and season features are set into their own dataframe, our model is ready for the current year stats to be passed through and give us a prediction. &nbsp;As with the Logistic and Decision models, the prediction outcome array is set to a dataframe and joined with the name dataframe.
             </span>
           </p>
           <p style="text-align: center;">
             <span style="line-height: 2.0;">
-              <img src="static/images/random-forest-2.png" width="492" style="width: 805px;" class="fr-dib fr-fic">
+              <img src="../images/random-forest-2.png" width="492" style="width: 805px;" class="fr-dib fr-fic">
             </span>
           </p>
           <p style="text-align: center;">
@@ -156,7 +153,7 @@ borders: top right bottom left !important
           <div class="u-repeater u-repeater-1">
             <div class="u-container-style u-list-item u-repeater-item">
               <div class="u-container-layout u-similar-container u-container-layout-1">
-                <img alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-1" data-image-width="2244" data-image-height="2048" src="static/images/ramdom_forest_logo.png" data-href="https://en.wikipedia.org/wiki/Logistic_regression" data-target="_blank">
+                <img alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-1" data-image-width="2244" data-image-height="2048" src="../images/ramdom_forest_logo.png" data-href="https://en.wikipedia.org/wiki/Logistic_regression" data-target="_blank">
                 <h3 class="u-align-center u-text u-text-default u-text-1">Random Forest</h3>
                 <p class="u-align-center u-text u-text-2">Learn more about Random Forest Classification from Wikipedia.</p>
                 <a href="https://en.wikipedia.org/wiki/Random_forest" class="u-active-none u-border-2 u-border-hover-palette-2-base u-border-palette-2-light-1 u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-1" target="_blank">Wikipedia</a>
@@ -164,7 +161,7 @@ borders: top right bottom left !important
             </div>
             <div class="u-container-style u-list-item u-repeater-item" data-href="4Random-Forest.html#sec-2702" data-page-id="694605391">
               <div class="u-container-layout u-similar-container u-container-layout-2">
-                <img alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-2" data-image-width="575" data-image-height="447" src="static/images/lg_logo.png">
+                <img alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-2" data-image-width="575" data-image-height="447" src="../images/lg_logo.png">
                 <h3 class="u-align-center u-text u-text-default u-text-3">Logistic Regression</h3>
                 <p class="u-align-center u-text u-text-4">See how our Logistic Regression model was set up</p>
                 <a href="2Logistic-Regression.html" data-page-id="2799000724" class="u-active-none u-border-2 u-border-hover-palette-2-base u-border-palette-2-light-1 u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-2">Logistic Regression</a>
@@ -172,7 +169,7 @@ borders: top right bottom left !important
             </div>
             <div class="u-container-style u-list-item u-repeater-item">
               <div class="u-container-layout u-similar-container u-container-layout-3">
-                <img alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-3" data-image-width="222" data-image-height="430" src="static/images/wnba_trophy1.jpg" data-href="1Home.html#sec-6c94" data-page-id="80299425">
+                <img alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-3" data-image-width="222" data-image-height="430" src="../images/wnba_trophy1.jpg" data-href="1Home.html#sec-6c94" data-page-id="80299425">
                 <h3 class="u-align-center u-text u-text-default u-text-5">Prediction outcome</h3>
                 <p class="u-align-center u-text u-text-6">Skip straight to the prediction!<br>What's your guess?
                 </p>

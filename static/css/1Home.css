@@ -1,5 +1,5 @@
 .u-section-1 {
-    background-image: linear-gradient(0deg, rgba(63, 9, 63, 0.75), rgba(15, 1, 15, 0.75)), url("static/images/WNBA-BG.png");
+    background-image: linear-gradient(0deg, rgba(63, 9, 63, 0.75), rgba(15, 1, 15, 0.75)), url("../../images/WNBA-BG.png");
   }
   
   .u-section-1 .u-sheet-1 {
@@ -137,7 +137,7 @@
   .u-section-2 .u-image-1 {
     min-height: 305px;
     pointer-events: auto;
-    background-image: url("static/images/tamika-catchings3.png");
+    background-image: url("../images/tamika-catchings3.png");
     background-position: 50% 50%;
   }
   
@@ -149,7 +149,7 @@
   .u-section-2 .u-image-2 {
     min-height: 305px;
     pointer-events: auto;
-    background-image: url("static/images/3e8562112000203.600c5042d339d.png");
+    background-image: url("../images/3e8562112000203.600c5042d339d.png");
     background-position: 50% 50%;
   }
   
@@ -160,7 +160,7 @@
   
   .u-section-2 .u-image-3 {
     min-height: 305px;
-    background-image: url("static/images/win-vs-lose.png");
+    background-image: url("../images/win-vs-lose.png");
     background-position: 50% 0%;
   }
   
@@ -324,7 +324,7 @@
       min-height: 364px;
     }
   } .u-section-3 {
-    background-image: linear-gradient(0deg, rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("static/images/BG6.png");
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url("../../images/BG6.png");
     background-position: 50% 50%;
   }
   
@@ -720,6 +720,7 @@
       margin-right: initial;
       margin-left: initial;
     }
+  
   } .u-section-5 .u-sheet-1 {
     min-height: 710px;
   }

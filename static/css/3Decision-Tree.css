@@ -1,6 +1,6 @@
 .u-section-1 {
   
-    background-image: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("static/images/las-vegas_aces.png");
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../../images/las-vegas_aces.png");
   }
   /* url("../../images/17155980.jpg")*/
   .u-section-1 .u-sheet-1 {
@@ -38,7 +38,7 @@
     min-height: 431px;
     pointer-events: auto;
     /*background-image: url("../../images/DT_tree_white.png");*/
-    background-image: url("static/images/RF_tree_white.png");
+    background-image: url("../../images/RF_tree_white.png");
     background-position: 50% 50%;
   }
   

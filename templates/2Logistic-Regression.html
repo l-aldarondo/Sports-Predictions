@@ -21,12 +21,9 @@
     <script type="application/ld+json">{
 		"@context": "http://schema.org",
 		"@type": "Organization",
-		"name": "NBA Prediction",
+		"name": "WNBA Prediction",
 		"sameAs": [
-				"https://github.com/fatehluqman",
-				"https://www.linkedin.com/in/fatehluqman/",
-				"https://www.linkedin.com/in/jason-boyer7/",
-				"https://github.com/boyerjason700"
+				
 		]
 }</script>
     <meta name="theme-color" content="#478ac9">
@@ -98,7 +95,7 @@ borders: top right bottom left !important
       <h1 style="text-align: center;">Logistic Regression</h1>
       <p style="text-align: center;">In statistics, the logistic model (or logit model) is used to model the probability of a certain class or event existing such as pass/fail, win/lose, alive/dead or healthy/sick. This can be extended to model several classes of events such as determining whether an image contains a cat, dog, lion, etc. Each object being detected in the image would be assigned a probability between 0 and 1, with a sum of one.</p>
       <p style="text-align: left;">&nbsp;<span style="line-height: 2.0;">
-          <img src="static/images/Logistic_Regression_1.png" align="center" style="width: 807px;" class="fr-dii fr-fic fr-fir" width="492.5">After cleaning is done to the datasets, they are both inserted into a PostgreSQL database. &nbsp;From there, we import them into our Model for training.&nbsp;
+          <img src="../images/Logistic_Regression_1.png" align="center" style="width: 807px;" class="fr-dii fr-fic fr-fir" width="492.5">After cleaning is done to the datasets, they are both inserted into a PostgreSQL database. &nbsp;From there, we import them into our Model for training.&nbsp;
         </span>
       </p>
     </div>
@@ -107,28 +104,28 @@ borders: top right bottom left !important
         <br>
       </p>
       <p style="text-align: center;">Unneeded features are dropped from the data sets. &nbsp;Features 'Season' and 'TM' are set as a new dataframe to use later. </p>
-         <img src="static/images/Logistic_Regression_2.png" align="center" style="width: 807px;" class="fr-dib fr-fic" width="492">
+         <img src="../images/Logistic_Regression_2.png" align="center" style="width: 807px;" class="fr-dib fr-fic" width="492">
         </span> 
       <p style="text-align: center;">&nbsp;Since we are using 'Position' feature as our Binary target for this model, we assign 'Position' to the y variable. &nbsp;All other features are assigned to variable X. &nbsp;The data is then split into 4 groups. &nbsp;X_train, X_test, y_train, and y_test. &nbsp;These will be used to train and test the models accuracy. &nbsp;X_train and X_test are then scaled to normalize the data. &nbsp;Our model is then created as 'classifier' and the training data is passed through. &nbsp;The model 'learns' which features from the X_train data that are most important in determining the outcome of our y_train feature, 'Position'.<span style="line-height: 2.0;">
-          <img src="static/images/Logistic_Regression_3.png" align="center" style="width: 807px;" class="fr-dib fr-fic" width="492">
+          <img src="../images/Logistic_Regression_3.png" align="center" style="width: 807px;" class="fr-dib fr-fic" width="492">
         </span>
       </p>
       <p style="text-align: center;">
         <span style="line-height: 2.0;">Logistic Regression is similar to linear regression in that the aim is to find the values of the coefficients that weight each feature. But unlike linear regression, the output is transformed using the logistic function, which looks like a big 'S'. &nbsp;Each team is given either a '0' or '1' and plotted of the S curve graph.</span>
         <span style="line-height: 2.0;">
-          <img src="static/images/Logistic_Regression_sample.png" width="492" style="width: 557px;" class="fr-dib fr-fic">
+          <img src="../images/Logistic_Regression_sample.png" width="492" style="width: 557px;" class="fr-dib fr-fic">
         </span>
       </p>
     </div>
     <div class="fr-view u-align-center u-clearfix u-rich-text u-text u-text-3">
       <p style="text-align: center;">We will then score the data by passing the test sets through the model. &nbsp;This shows that by training our model with X_train and y_train, it is 92.41% accurate at choosing which binary outcome of feature 'Position' is determined.<span style="line-height: 2.0;">
-          <img src="static/images/Logistic_Regression_4.png" align="center" style="width: 807px;" class="fr-dib fr-fic" width="492.5">
+          <img src="../images/Logistic_Regression_4.png" align="center" style="width: 807px;" class="fr-dib fr-fic" width="492.5">
         </span>
       </p>
     </div>
     <div class="fr-view u-align-center u-clearfix u-rich-text u-text u-text-4">
       <p style="text-align: center;">
-        <span style="line-height: 2.0;">We used multiple methods to find the important features for this model. &nbsp;Ranking features using Coefficients, Recursive Feature Elimination and Select from Model methods were used and explored by removing the bottom features of each and scoring accuracy. &nbsp;It was found that no matter which method we used or which features were removed, accuracy decreased.&nbsp; We chose to use all features to train this model.<img src="C:/Users/rafae/OneDrive/Desktop/FINAL_PROJECT/static/images/Logistic_Regression_5.png" align="center" style="width: 456px;" class="fr-dib fr-fic" width="492.5">&nbsp;Now time to pass through our current year dataset.
+        <span style="line-height: 2.0;">We used multiple methods to find the important features for this model. &nbsp;Ranking features using Coefficients, Recursive Feature Elimination and Select from Model methods were used and explored by removing the bottom features of each and scoring accuracy. &nbsp;It was found that no matter which method we used or which features were removed, accuracy decreased.&nbsp; We chose to use all features to train this model.<img src="../images/Logistic_Regression_5.png" align="center" style="width: 456px;" class="fr-dib fr-fic" width="492.5">&nbsp;Now time to pass through our current year dataset.
         </span>
       </p>
     </div>
@@ -160,7 +157,7 @@ borders: top right bottom left !important
           <div class="u-repeater u-repeater-1">
             <div class="u-container-style u-list-item u-repeater-item">
               <div class="u-container-layout u-similar-container u-container-layout-1">
-                <img alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-1" data-image-width="2244" data-image-height="2048" src="static/images/lg_logo.png" data-href="https://en.wikipedia.org/wiki/Logistic_regression" data-target="_blank">
+                <img alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-1" data-image-width="2244" data-image-height="2048" src="../images/lg_logo.png" data-href="https://en.wikipedia.org/wiki/Logistic_regression" data-target="_blank">
                 <h3 class="u-align-center u-text u-text-default u-text-1">Logistic Regression&nbsp;</h3>
                 <p class="u-align-center u-text u-text-2">Learn more about Logistic Regressions from Wikipedia.</p>
                 <a href="https://en.wikipedia.org/wiki/Logistic_regression" class="u-active-none u-border-2 u-border-hover-palette-2-base u-border-palette-2-light-1 u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-1" target="_blank">Wikipedia</a>
@@ -168,7 +165,7 @@ borders: top right bottom left !important
             </div>
             <div class="u-container-style u-list-item u-repeater-item" data-href="4Random-Forest.html#sec-2702" data-page-id="694605391">
               <div class="u-container-layout u-similar-container u-container-layout-2">
-                <img alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-2" data-image-width="486" data-image-height="437" src="static/images/Decision_tree_lg_logo1.png">
+                <img alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-2" data-image-width="486" data-image-height="437" src="../images/Decision_tree_lg_logo1.png">
                 <h3 class="u-align-center u-text u-text-default u-text-3">Decision Tree</h3>
                 <p class="u-align-center u-text u-text-4">See how our Decision Tree model was set up.</p>
                 <a href="3Decision-Tree.html" data-page-id="300932814" class="u-active-none u-border-2 u-border-hover-palette-2-base u-border-palette-2-light-1 u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-2">Decision Tree</a>
@@ -176,7 +173,7 @@ borders: top right bottom left !important
             </div>
             <div class="u-container-style u-list-item u-repeater-item">
               <div class="u-container-layout u-similar-container u-container-layout-3">
-                <img alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-3" data-image-width="222" data-image-height="430" src="static/images/wnba_trophy1.jpg"" data-href="1Home.html#sec-6c94" data-page-id="80299425">
+                <img alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-3" data-image-width="222" data-image-height="430" src="../images/wnba_trophy1.jpg"" data-href="1Home.html#sec-6c94" data-page-id="80299425">
                 <h3 class="u-align-center u-text u-text-default u-text-5">Prediction outcome</h3>
                 <p class="u-align-center u-text u-text-6">Skip straight to the prediction!<br>What's your guess?
                 </p>

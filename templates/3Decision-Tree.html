@@ -95,7 +95,7 @@ borders: top right bottom left !important
           <p style="text-align: center;">Decision Tree is a supervised algorithm used in machine learning. It is using a binary tree graph (each node has two children) to assign for each data sample a target value. The target values are presented in the tree leaves. To reach the leaf, the sample is propagated through nodes, starting at the root node. In each node a decision is made, to which descendant node it should go. A decision is made based on the selected sample’s feature. &nbsp;Decision tree learning is a process of finding the optimal rules in each internal tree node according to the selected metric.</p>
           <p style="text-align: center;">&nbsp;<span style="line-height: 2.0;">
               <!--<img src="../images/DCimport.png" align="center" style="width: 807px;" class="fr-dii fr-fic fr-fil" width="525">After cleaning is done to the datasets, they are both inserted into a PostgreSQL database. &nbsp;From there, we import them into our Model for training. -->
-              <img src="static/images/decision_tree_1.png" align="center" style="width: 807px;" class="fr-dii fr-fic fr-fil" width="525">After cleaning is done to the datasets, they are both inserted into a PostgreSQL database. &nbsp;From there, we import them into our Model for training.
+              <img src="../images/decision_tree_1.png" align="center" style="width: 807px;" class="fr-dii fr-fic fr-fil" width="525">After cleaning is done to the datasets, they are both inserted into a PostgreSQL database. &nbsp;From there, we import them into our Model for training.
             </span>
           </p>
         </div>
@@ -107,13 +107,13 @@ borders: top right bottom left !important
           <p style="text-align: center;">
             <span style="line-height: 2.0;">
               <!--<img src="../images/dcsplit.png" align="center" style="width: 547px;" class="fr-dib fr-fic" width="492">Our model is then created as 'tree1' and the training data is passed through. &nbsp;The model passes the features through the node and then through each leaf, making a decision to assign it to one or the other binary values. &nbsp;It 'learns' what values are more associated with the target along the way.-->
-              <img src="static/images/decision_tree_2.png" align="center" style="width: 807px;" class="fr-dib fr-fic" width="492">Our model is then created as 'tree1' and the training data is passed through. &nbsp;The model passes the features through the node and then through each leaf, making a decision to assign it to one or the other binary values. &nbsp;It 'learns' what values are more associated with the target along the way.
+              <img src="../images/decision_tree_2.png" align="center" style="width: 807px;" class="fr-dib fr-fic" width="492">Our model is then created as 'tree1' and the training data is passed through. &nbsp;The model passes the features through the node and then through each leaf, making a decision to assign it to one or the other binary values. &nbsp;It 'learns' what values are more associated with the target along the way.
             </span>
           </p>
           <p style="text-align: center;">
             <span style="line-height: 2.0;">
              <!-- <img src="../images/RF_tree_white.png" style="width: 875px;" class="fr-dib fr-fic" width="492">-->
-              <img src="static/images/RF_tree_white.png" style="width: 875px;" class="fr-dib fr-fic" width="492">
+              <img src="../images/RF_tree_white.png" style="width: 875px;" class="fr-dib fr-fic" width="492">
             </span>
             <br>
           </p>
@@ -121,20 +121,20 @@ borders: top right bottom left !important
         <div class="fr-view u-align-center u-clearfix u-rich-text u-text u-text-3">
           <p style="text-align: center;">We will then score the data by passing the test sets through the model. &nbsp;This shows that by training our model with X_train and y_train, it is 92.41% accurate at choosing which binary outcome of feature 'Position' is determined.<span style="line-height: 2.0;">
               <!--<img src="../images/dc_accuracy.png" align="center" style="width: 582px;" class="fr-dib fr-fic" width="374">-->
-              <img src="static/images/decision_tree_3.png" align="center" style="width: 807px;" class="fr-dib fr-fic" width="374">
+              <img src="../images/decision_tree_3.png" align="center" style="width: 807px;" class="fr-dib fr-fic" width="374">
             </span>
           </p>
         </div>
         <div class="fr-view u-align-center u-clearfix u-rich-text u-text u-text-4">
           <p style="text-align: center;">The importance that the model has assigned to each feature can be charted out. &nbsp;This gives us a good idea of which features heavily influence the models prediction.<span style="line-height: 2.0;">
               <!--<img src="../images/DC_feature_import.png" align="center" style="width: 456px;" class="fr-dib fr-fic" width="453">Features that hold no importance in helping the model decide are dropped and the model is ran again to verify accuracy did not decrease. &nbsp;In our case, the bottom 11 features were able to be dropped without decreasing the accuracy of the model. &nbsp;We then pass through the current year stats through the trained decision tree model and predict the outcome. &nbsp;As with the Logistic Regression model, the prediction outcome array is set into a dataframe and then joined back with the name dataframe, to reveal the winners predicted.-->
-              <img src="static/images/DC_feature_import.png" align="center" style="width: 456px;" class="fr-dib fr-fic" width="453">Features that hold no importance in helping the model decide are dropped and the model is ran again to verify accuracy did not decrease. &nbsp;In our case, the bottom 17 features were able to be dropped without decreasing the accuracy of the model. &nbsp;We then pass through the current year stats through the trained decision tree model and predict the outcome. &nbsp;As with the Logistic Regression model, the prediction outcome array is set into a dataframe and then joined back with the name dataframe, to reveal the winners predicted.
+              <img src="../images/DC_feature_import.png" align="center" style="width: 456px;" class="fr-dib fr-fic" width="453">Features that hold no importance in helping the model decide are dropped and the model is ran again to verify accuracy did not decrease. &nbsp;In our case, the bottom 17 features were able to be dropped without decreasing the accuracy of the model. &nbsp;We then pass through the current year stats through the trained decision tree model and predict the outcome. &nbsp;As with the Logistic Regression model, the prediction outcome array is set into a dataframe and then joined back with the name dataframe, to reveal the winners predicted.
             </span>
           </p>
           <h4 style="text-align: center;">
             <span style="line-height: 2.0;">
               <!--<img src="../images/dc_prediction.png" width="492" style="width: 921px;" class="fr-dib fr-fic">-->
-              <img src="static/images/decision_tree_4.png" width="492" style="width: 921px;" class="fr-dib fr-fic">
+              <img src="../images/decision_tree_4.png" width="492" style="width: 921px;" class="fr-dib fr-fic">
               <p>
                 <br>
               </p>
@@ -151,7 +151,7 @@ borders: top right bottom left !important
             <div class="u-container-style u-list-item u-repeater-item">
               <div class="u-container-layout u-similar-container u-container-layout-1">
                 <!--src="../images/Wikipedia_logo_v2_black.svg.png"-->
-                <img alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-1" data-image-width="2244" data-image-height="2048" src="static/images/Decision_tree_lg_logo1.png" data-href="https://en.wikipedia.org/wiki/Logistic_regression" data-target="_blank">
+                <img alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-1" data-image-width="2244" data-image-height="2048" src="../images/Decision_tree_lg_logo1.png" data-href="https://en.wikipedia.org/wiki/Logistic_regression" data-target="_blank">
                 <h3 class="u-align-center u-text u-text-default u-text-1">Decision Tree</h3>
                 <p class="u-align-center u-text u-text-2">Learn more about Decision Trees from Wikipedia.</p>
                 <a href="https://en.wikipedia.org/wiki/Decision_tree" class="u-active-none u-border-2 u-border-hover-palette-2-base u-border-palette-2-light-1 u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-1" target="_blank">Wikipedia</a>
@@ -159,7 +159,7 @@ borders: top right bottom left !important
             </div>
             <div class="u-container-style u-list-item u-repeater-item" data-href="4Random-Forest.html#sec-2702" data-page-id="694605391">
               <div class="u-container-layout u-similar-container u-container-layout-2">
-                <img alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-2" data-image-width="773" data-image-height="418" src="static/images/ramdom_forest_logo.png">
+                <img alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-2" data-image-width="773" data-image-height="418" src="../images/ramdom_forest_logo.png">
                 <h3 class="u-align-center u-text u-text-default u-text-3">Random Forest</h3>
                 <p class="u-align-center u-text u-text-4">See how our Random Forest model was set up</p>
                 <a href="4Random-Forest.html" data-page-id="694605391" class="u-active-none u-border-2 u-border-hover-palette-2-base u-border-palette-2-light-1 u-btn u-button-style u-hover-none u-none u-text-body-color u-btn-2">Random Forest</a>
@@ -167,7 +167,7 @@ borders: top right bottom left !important
             </div>
             <div class="u-container-style u-list-item u-repeater-item">
               <div class="u-container-layout u-similar-container u-container-layout-3">
-                <img alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-3" data-image-width="222" data-image-height="430" src="static/images/wnba_trophy1.jpg" data-href="1Home.html#sec-6c94" data-page-id="80299425">
+                <img alt="" class="u-expanded-width u-image u-image-contain u-image-default u-image-3" data-image-width="222" data-image-height="430" src="../images/wnba_trophy1.jpg" data-href="1Home.html#sec-6c94" data-page-id="80299425">
                 <h3 class="u-align-center u-text u-text-default u-text-5">Prediction outcome</h3>
                 <p class="u-align-center u-text u-text-6">Skip straight to the prediction!<br>What's your guess?
                 </p>

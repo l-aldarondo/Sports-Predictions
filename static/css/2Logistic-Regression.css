@@ -1,5 +1,5 @@
 .u-section-1 {
-    background-image: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("static/images/r1088868_1296x729_16-9.jpg");
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("../../images/r1088868_1296x729_16-9.jpg");
   }
   
   .u-section-1 .u-sheet-1 {
@@ -36,7 +36,7 @@
   .u-section-1 .u-image-1 {
     min-height: 431px;
     pointer-events: auto;
-    background-image: url("static/images/logistic-regression.png");
+    background-image: url("../../images/logistic-regression.png");
     background-position: 50% 50%;
   }
   
