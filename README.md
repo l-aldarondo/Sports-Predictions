@@ -394,6 +394,8 @@ While individual trees might be “weak learners,” the principle of Random For
 
 * ### [WNBA Predictions Web Page](https://sports-predictions.pages.dev/)
 
+<sub> Web-page deployed using cloudflare pages
+
 <br/>
    
 ## Summary:
